@@ -1,0 +1,141 @@
+	.row {
+		background: #F0EEEB;
+		margin-top: 3em;
+		padding: 1em;	
+	
+		@media (min-width: $small) {
+			margin-top: 8em;
+		}
+		@media (min-width: $medium) {
+			margin-top: 4.4em;
+		}
+		
+		.modules__container {
+			margin: 0 auto;
+			max-width: 70em;
+	
+			@media (min-width: $small) {
+				display: flex;
+			}
+		}
+		.hp-module {
+			padding: 0;
+	
+			@media (min-width: $small) {
+				width: 50%;
+	
+				&:first-child {
+					margin-right: 0.6em;
+				}
+				&:last-child {
+					margin-left: 0.6em;
+				}
+			}
+	
+			.module__content {
+				padding: 1.4em;
+			}
+			h2 {
+				margin: 0;
+				padding: 0.6em 0.6em 0.4em 0.6em;
+				background: #000;
+				border: none;
+				color: #eee;
+				letter-spacing: 2px;
+				font-size: 1em;
+				font-family: "proxima-nova-condensed";
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+		.module--apply {
+			background: #fff;
+			border: 0.4em solid $VC__vassarBurgundy;
+			
+			h2 {
+				background: $VC__vassarBurgundy;
+			}
+			
+			.button--apply {
+				@include button($VC__vassarBurgundy, darken($VC__vassarBurgundy, 10%), #fff, #fff);
+			}
+			.button--learnmore {
+				@include button($admissions-blue, darken($admissions-blue, 10%), $admissions-lightblue, $admissions-lightblue);			
+			}
+			.button--status {
+				@include button($admissions-gold, darken($admissions-gold, 10%), #000, #000);			
+			}
+		}
+		.module--info {
+			border: 0.4em solid #ffba24;
+			
+			h2 {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAS0lEQVQoU2P8/6DqP8Oruww4gZgyWIrx/6nw/4QU4VcINQlsyKu7OExEU4TdRCyKMBXiUISqEI8ihEICiiAKQeEIA3jCE6GQQKADABruMewXb/dgAAAAAElFTkSuQmCC) repeat;
+				color: #000 !important;
+				/* display: none; */
+			}
+		}
+	}
+	
+	
+	
+		.infoSections {
+		@media (min-width: $large) {
+			-webkit-column-count: 2;
+			column-count: 2;
+		}
+		.infoSection {
+			margin-bottom: 1em;
+	
+			@media (min-width: $large) {
+				display: inline-block;
+			}
+	
+			h3 {
+				text-align: left;
+				margin: 0 0 0.2em 0;
+				font-size: 0.9em;
+			}
+		}
+	}
+
+
+	.moreInfo {
+		margin: 1em 0 0 0;
+		text-align: right;
+		width: 100%;
+		
+		a {
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    letter-spacing: 0.04em;
+		}
+		a, a:visited {
+			color: #eb4200;
+		}
+		a:hover, a:visited:hover {
+			color: #000;
+		}
+	}
+
+
+
+/*	We're hiding this design */
+	.row.newModules {
+		display: none;
+	}
+
+
+	.admissions__description.admissions__description--long {
+		display: flex;
+	}
+	.index-list {
+		li {
+		    padding: 0.4em 0;
+		    border-top: 1px solid #eee;
+	
+			em {
+				float: right;
+			}
+		}
+	}

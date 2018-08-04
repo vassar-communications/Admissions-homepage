@@ -1,0 +1,392 @@
+/*	FEATURE-MODULES
+	================================ */
+.modules {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5% 1%;
+  background: #EEF2E1;
+  background: #F2E8E1;
+  background: #000;
+  background: #f00;
+  background: url("../images/hp/module-bg.png");
+}
+
+.hp-module img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.hp-module {
+  padding: 4%;
+  background: #fff;
+  margin-top: .5em;
+}
+
+.hp-module p {
+  font-weight: 300;
+  font-size: .9em;
+  line-height: 125%;
+}
+
+.hp-module.module-location .mod-content p {
+  padding: 2%;
+  padding-bottom: 0;
+}
+
+.hp-module.module-location .mod-content p a {
+  font-weight: 700;
+}
+
+.hp-module.module-academics li {
+  display: block;
+  padding: .5em;
+}
+
+/* Academics */
+.hp-module.module-academics h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.hp-module.module-academics li:nth-child(2n+2) {
+  background: #E4F5F5;
+}
+
+@media all and (min-width: 640px) {
+  .hp-module.module-academics li {
+    padding: 0.3em 0;
+  }
+
+  .hp-module.module-academics .more-link {
+    background: #09c;
+    color: #fff;
+  }
+
+  .hp-module.module-academics .more-link:hover {
+    background: #000;
+  }
+
+  .hp-module.module-location .more-link {
+    background: #000;
+    color: #fff;
+  }
+
+  .hp-module.module-location .more-link:hover {
+    background: #4a3;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 840px) {
+  .hp-module.module-academics {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  .hp-module.module-academics li {
+    display: inline-block;
+    width: 100%;
+    background: none;
+  }
+
+  .hp-module.module-academics li:nth-child(2n+2) {
+    background: none;
+  }
+}
+@media all and (min-width: 840px) {
+  .hp-module {
+    overflow: hidden;
+    max-width: 1350px;
+    margin: 1em auto;
+    position: relative;
+    padding: 0;
+    padding-top: 0.7em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .hp-module.module-location {
+    background: #000;
+    border: 6px solid black;
+  }
+
+  .hp-module h2 {
+    font-family: "proxima-nova-condensed";
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 1.4em;
+    padding: 0;
+    text-align: left;
+    border: none;
+    margin: 0.2em 0 0.6em 1em;
+  }
+
+  .hp-module.module-location h2 {
+    display: inline;
+    display: block;
+    width: 50%;
+    color: #fff;
+    float: left;
+    clear: both;
+  }
+
+  .hp-module h2 img {
+    clear: both;
+    border: 1px solid blue;
+    max-width: 100%;
+  }
+
+  .hp-module .hp-module-panel h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 1em;
+    font-size: 1em;
+    color: #888;
+    margin-top: 0.1em;
+  }
+
+  .hp-module.module-academics li {
+    padding: 0;
+  }
+
+  .hp-module.module-academics h3 {
+    position: static;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    top: auto;
+    left: auto;
+  }
+
+  .hp-module.module-location .hp-module-panel.active h3,
+  .hp-module.module-location .hp-module-panel:hover h3:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .hp-module.module-location .mod-content p {
+    font-size: .9em;
+    font-weight: 300;
+    line-height: 125%;
+  }
+
+  .hp-module.module-location .mod-content .mod-image {
+    float: left;
+    max-width: 65%;
+    overflow: hidden;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+
+  .hp-module.module-location .hp-module-panel {
+    float: left;
+  }
+
+  .hp-module.module-location .mod-content {
+    display: none;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+  }
+
+  .hp-module.module-location .active .mod-content,
+  .hp-module.module-location .hp-module-panel:hover .mod-content {
+    display: block;
+    position: absolute;
+    top: 48px;
+    top: 3em;
+    /*      top: 3em;
+      */
+    left: 0;
+    height: 100%;
+  }
+
+  .hp-module.module-location {
+    height: 384px;
+    height: 24em;
+    /*		height: 24em;
+      */
+  }
+
+  .hp-module .more-link {
+    padding: 0;
+    margin: 0;
+    background: none;
+    font-size: 16px;
+    font-size: 1em;
+    /*	font-size: 1em;
+    */
+  }
+
+  .hp-module.module-location .more-link {
+    color: #fff;
+    float: right;
+    margin-right: 16px;
+    margin-right: 1em;
+    margin-top: 4.8px;
+    margin-top: 0.3em;
+    /*        margin-right: 1em;
+            margin-top: .3em;
+      */
+  }
+
+  .hp-module.module-academics {
+    background: black url("../images/hp/mod-academics/hp-mod-academics-framebg.jpg") no-repeat left top;
+  }
+
+  .hp-module.module-academics li {
+    font-size: .9em;
+    font-weight: 100;
+  }
+
+  .hp-module.module-academics li:nth-child(2n+2) {
+    background: none;
+  }
+
+  .hp-module.module-academics h2 {
+    color: #fff;
+  }
+
+  .hp-module.module-academics .module-panels {
+    float: left;
+    margin-top: -35.2px;
+    margin-top: -2.2em;
+    margin-left: 59.2px;
+    margin-left: 3.7em;
+    /*        margin-top: -2.2em;
+            margin-left: 3.7em;
+      */
+    display: inline;
+  }
+
+  .hp-module.module-academics .module-inner {
+    background: white url("../images/hp/mod-academics/hp-mod-academics-bg.jpg") no-repeat left bottom;
+    margin: 0 6px 6px 6px;
+    clear: both;
+  }
+
+  .hp-module.module-academics .module-intro {
+    float: left;
+    padding: 2% 2% 144px 2%;
+    padding: 2% 2% 6em 2%;
+    /*        padding: 2% 2% 9em 2%;
+      */
+    line-height: 125%;
+    margin: 0 0 6px 6px;
+    width: 30%;
+    font-size: 16px;
+    font-size: 1em;
+    /*        font-size: 1em;
+      */
+    font-weight: 300;
+  }
+
+  .hp-module.module-academics .hp-module-panel {
+    float: left;
+  }
+
+  .hp-module.module-academics .hp-module-panel .mod-content {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    top: 64px;
+    top: 4em;
+    /*       top: 4em;
+      */
+    right: 0;
+    background: #fff;
+  }
+
+  .hp-module.module-academics .hp-module-panel.active .mod-content,
+  .hp-module.module-academics .hp-module-panel:hover .mod-content,
+  .hp-module.module-academics .hp-module-panel:hover .mod-content:hover {
+    width: 60%;
+    height: auto;
+    opacity: 1;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .hp-module-panel h3 {
+    color: #888;
+    margin-left: 9.6px;
+    margin-left: 0.6em;
+    /*       margin-left: .6em;
+      */
+    float: left;
+  }
+
+  /*    .hp-module:hover .hp-module-panel.active h3 {
+      	color: #888;
+      } */
+  .hp-module-panel.active h3,
+  .hp-module-panel:hover h3 {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .hp-module.module-academics .hp-module-panel li {
+    float: left;
+    width: 47%;
+    margin-right: 1px;
+    border-bottom: 1px dotted #aaaaaa;
+    padding: 0.3em;
+  }
+
+  .hp-module.module-academics .more-link {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    padding: 1em;
+    /*        padding: 1em;
+      */
+    color: #fff;
+  }
+
+  .hp-module .more-link:hover {
+    color: #ccc;
+  }
+}
+.mod-content p {
+  margin: 0;
+  padding: 0;
+}
+
+@media all and (min-width: 1124px) {
+  .mod-content p {
+    font-size: 1.2em;
+  }
+
+  .hp-module.module-location .mod-content .mod-image {
+    width: auto;
+  }
+}
+@media all and (min-width: 840px) and (max-width: 1123px) {
+  .hp-module.module-location .mod-content .mod-image {
+    width: 50%;
+    margin-bottom: 19.2px;
+    margin-bottom: 1.2em;
+    /*	margin-bottom: 1.2em;
+    */
+  }
+}

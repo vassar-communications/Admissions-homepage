@@ -1,0 +1,349 @@
+/* Nav */
+/* width-640 -------------------------------------- */
+/* NAVIGATION */
+@media all and (min-width: 640px) {
+  .more-link {
+    margin: 0;
+  }
+}
+.ac-navanchor.ac-navanchor-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3em;
+  height: 3em;
+  line-height: 0;
+  text-align: center;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+.ac-navanchor-menu:before {
+/*  font-family: "icomoon";
+  content: "\e000"; */
+  content: "\2630";  
+  font-size: 1.4em;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #aaa;
+  text-indent: 0;
+  text-shadow: none;
+}
+
+
+
+/*	MENUS
+	================================ */
+.u-navsite ul li a {
+  color: #eb4200;
+  font-weight: 500;
+  font-size: 1.4em;
+  border-bottom: 1px dashed #dddddd;
+}
+
+.u-navsite-level-1 > li > a:hover {
+  color: #fff;
+}
+
+.u-navsite-level-1 a {
+  display: block;
+}
+
+.u-navsite-level-1 a:hover {
+  background: #000;
+  color: white;
+}
+
+.u-navsite-level-1 > li > a {
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.u-navsite-level-2,
+.u-navsite-level-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.ac-navanchor.ac-navanchor-top {
+  display: block;
+  background: #eee;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+}
+
+.ac-navanchor.ac-navanchor-top:hover {
+  background: #ddd;
+}
+
+@media all and (min-width: 600px) {
+  .u-navsite ul li a {
+    border-bottom: none;
+    font-size: 1em;
+  }
+
+  .ac-navanchor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .u-navsite-level-2 > li > a {
+    position: static;
+    width: auto;
+    height: auto;
+    opacity: 1;
+  }
+
+  .u-navsite {
+  	position: absolute;
+    top: 6.5em;
+    text-align: center;
+    border-bottom: 1px dashed #dddddd;
+    width: 100%;
+  }
+
+  .u-navsite-level-1 > li {
+    width: 33%;
+    float: left;
+    position: relative;
+    display: inline;
+  }
+
+  .u-navsite-level-1 > li:hover ul {
+    display: block;
+    position: static;
+  }
+
+  .u-navsite-level-1 > li > a {
+    padding: .7em;
+    text-align: left;
+    border-top: 1px dashed #dddddd;
+    border-right: 1px dashed #dddddd;
+  }
+
+  .u-navsite-level-1 > li:hover > a {
+    border-color: #eb4200;
+    background: #eb4200;
+    color: #fff;
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .u-navsite-level-1 > li > a {
+    display: block;
+  }
+
+  .u-navsite-level-2 {
+    display: none;
+    text-align: left;
+    z-index: 999;
+    font-size: 1em;
+    background: #fff;
+    -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #cccccc;
+    border-top: 4px solid #eb4200;
+    border-bottom: 1px solid #eb4200;
+  }
+
+  .u-navsite-level-2 > li > a {
+    display: block;
+    padding: .5em;
+  }
+
+  .u-navsite-level-1 > li:hover .u-navsite-level-2 {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 20em;
+    height: auto;
+    opacity: 1;
+  }
+
+  .u-navsite-level-1 > li:hover ul {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    opacity: 1;
+  }
+
+  .u-navsite-level-2 li {
+    display: block;
+    font-size: .9em;
+  }
+
+  .u-navsite-level-3 {
+    padding-bottom: 16px;
+    padding-bottom: 1em;
+  }
+
+  .u-navsite-level-3 a {
+    padding: 0.2em;
+    padding-left: 1.4em;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 900px) {
+  .u-navsite {
+    width: 90%;
+    left: 5%;
+  }
+
+  .u-navsite-level-1 > li:hover:nth-child(3n+3) .u-navsite-level-2 {
+    left: auto;
+    right: 0;
+  }
+
+  .u-navsite-level-1 > li:nth-child(3n+3) a {
+    left: auto;
+    right: 0;
+    border-right: none;
+  }
+}
+@media all and (min-width: 900px) {
+  .u-navsite {
+    border-top: 1px dashed #dddddd;
+    border-bottom: none;
+  }
+
+  .u-navsite ul li a {
+    font-size: 1em;
+  }
+
+  .u-navsite-level-1 {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+  }
+
+  .u-navsite-level-1 > li {
+    width: auto;
+    float: left;
+    margin: 0;
+  }
+
+  .u-navsite-level-1 > li > a {
+    text-transform: lowercase;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2em;
+    white-space: nowrap;
+    border: none;
+  }
+
+  .u-navsite-level-1 > li:last-child:after {
+    content: "";
+  }
+
+  .u-navsite-level-2 > li > a {
+    display: block;
+    padding: 0.6em;
+  }
+
+  .u-navsite .u-navsite-level-2 > li > a:hover {
+    display: block;
+    background: #000;
+    border-color: #000;
+    color: #fff;
+  }
+
+  .u-navsite-level-1 li:hover .u-navsite-level-2 {
+    top: 2.4em;
+  }
+}
+@media all and (min-width: 1150px) {
+  .u-navsite ul li a {
+    font-size: 1.2em;
+    font-weight: 100;
+  }
+}
+
+/*	======
+	New design
+	====== */
+
+	.ac-navanchor.ac-navanchor-menu {
+		top: -4em;
+	}
+	.u-navsite ul li a {
+		color: $VC__vassarBurgundy;
+	}
+	
+	.u-navsite .u-navsite-level-2>li>a:hover {
+	    background: $VC__vassarLightGray;
+	    border-color: $VC__vassarLightGray;
+	    color: $VC__vassarGray;
+	}
+	.u-navsite-level-1 a:hover {
+	    background: $VC__vassarLightGray;
+	    color: $VC__vassarGray;
+	}
+	
+	
+	.u-navsite-level-1>li:hover>a {
+		border-color: $VC__vassarBurgundy;
+		background: $VC__vassarBurgundy;
+		color: #fff;
+	}
+
+
+	.nav.u-navsite {
+	    // border: none;
+	
+		@media (min-width: $medium) {
+		    background: #F0EEEB;
+		}
+		@media (min-width: $large) {
+			border: 0.9em solid #fff;
+		}
+	}
+	@media (min-width: $medium) {
+		.u-navsite-level-1>.u-navsite-id-contact:hover .u-navsite-level-2 {
+		    left: auto;
+		    right: 0;
+		    width: 14em;
+		}
+		.u-navsite-level-1 li:hover .u-navsite-level-2 {
+		    top: 2.3em;
+		}
+	}
+	@media (max-width: $medium) and (min-width: $small) {
+		.u-navsite {
+		    width: 100%;
+		    left: 0;
+		}
+	}
+
+	.u-navsite {
+		@media (min-width: 600px) {
+			// top: 5.4em !important;
+			top: 4em !important;
+		}
+		@media (min-width: 900px) {
+			border: none !important;
+			top: 6.6em !important;
+		}
+	}
+
+
+
+
+

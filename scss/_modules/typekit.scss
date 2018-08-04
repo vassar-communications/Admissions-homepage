@@ -1,0 +1,13 @@
+@media screen {
+  .is-typekit {
+    visibility: hidden;
+  }
+
+  	/* Web font loader
+        ======================================================================== */
+  .wf-error,
+  .wf-active,
+  .wf-inactive {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,252 @@
+/*	PHONESTOPPERS
+	================================ */
+.ps-youre-wondering,
+.ps-visit {
+  padding: 4%;
+}
+
+.phonestoppers li a {
+  padding: 0.6em;
+  display: block;
+}
+
+.phonestoppers-container .more-link {
+  color: #fff;
+}
+
+.phonestoppers-container a:hover {
+  color: #000;
+}
+/*
+.ps-youre-wondering {
+  background: #FFEFE8;
+}
+
+.ps-youre-wondering h2 {
+  border-bottom: 1px solid #edcbbe;
+}
+
+.ps-youre-wondering h2 a {
+  color: #D4A390;
+}
+
+.ps-youre-wondering li a {
+  border-bottom: 1px dashed #edcbbe;
+  color: #963611;
+}
+
+.ps-youre-wondering li a:hover {
+  background: #EDCBBE;
+}
+
+.ps-youre-wondering .more-link {
+  color: #D4A390;
+}
+
+.ps-visit {
+  border-top: 4px solid white;
+  background: #EBF7CB;
+}
+
+.ps-visit h2 {
+  border-bottom: 1px solid #cfdea6;
+}
+
+.ps-visit h2 a {
+  color: #ADBF7A;
+}
+
+.ps-visit li a {
+  border-bottom: 1px dashed #cfdea6;
+  color: #72853E;
+}
+
+.ps-visit .more-link {
+  color: #ADBF7A;
+}
+*/
+
+@media all and (min-width: 640px) {
+  /* PHONESTOPPERS */
+  .phonestoppers-container {
+    overflow: hidden;
+    position: relative;
+    margin: 2em 0;
+    border-top: 1px solid #dddddd;
+    padding: 0.4em 0;
+  }
+
+  .phonestoppers li {
+    font-size: 1.4em;
+    margin-top: -1px;
+  }
+
+  .ps-visit {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .phonestoppers-container h2 {
+    font-family: "proxima-nova-condensed";
+    font-size: 1em;
+    text-transform: uppercase;
+    width: 6em;
+    display: inline-block;
+    float: left;
+    color: #888;
+  }
+
+  .phonestoppers {
+    display: table;
+    position: absolute;
+    left: 7em;
+    top: 1em;
+  }
+
+  .phonestoppers ul {
+    display: table-row;
+  }
+
+  .phonestoppers ul li {
+    display: table-cell;
+    font-family: "proxima-nova";
+    font-size: 1em;
+    padding-right: 0.5em;
+    white-space: nowrap;
+  }
+
+  .phonestoppers ul li:after {
+    content: "\00B7";
+    margin-left: 0.5em;
+  }
+
+  .ps-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/hp/phonestoppers-more-bg.png") top left repeat-y;
+    background: #fff;
+    color: #000;
+    height: 100%;
+    padding: 1em 1em 1em 4em;
+    
+    &:before {
+	    content: "";
+	    position: absolute;
+	    width: 2em;
+	    height: 100%;
+		left: -2em;
+		
+	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+70 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+	    
+    }
+    
+  }
+
+/*
+  .ps-youre-wondering a, .ps-youre-wondering h2 {
+    color: #ec6100;
+  }
+
+  .ps-visit a, .ps-visit h2 {
+    color: #639309;
+  }
+*/
+}
+@media all and (min-width: 640px) {
+  .phonestoppers li a {
+    padding: 0;
+    display: inline;
+    border: none;
+  }
+
+  .phonestoppers li a:hover {
+    background: none;
+  }
+
+  .phonestoppers-container {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 1%;
+  }
+
+  .ps-visit {
+    border-top: none;
+  }
+
+  .phonestoppers-container h2 {
+    padding: 0;
+    border: none;
+  }
+
+  .ps-visit h2 i {
+    display: block;
+  }
+
+  .phonestoppers-container a.more-link {
+    margin: 0;
+    /*    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    font-size: 16px;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/hp/phonestoppers-more-bg.png") top left repeat-y;
+    height: 100%;
+    padding: 16px 16px 16px 64px;
+    padding: 1em 1em 1em 4em;
+    /*    padding: 1em 1em 1em 4em;
+    */
+  }
+
+/*
+  .ps-youre-wondering a.more-link,
+  .ps-youre-wondering li a {
+    color: #ec6100;
+  }
+
+  .ps-visit a.more-link,
+  .ps-visit li a {
+    color: #639309;
+  }
+*/
+
+  a.ps-more:hover {
+    color: #000;
+  }
+
+  .ps-visit {
+    border: none;
+    margin-bottom: .5em;
+  }
+}
+
+
+
+/*	========
+	NEW DESIGN
+	======== */
+
+.phonestoppers-container a {
+	color: #882344 !important;
+	text-decoration: underline;
+	text-decoration-color: #ccc;
+}
+.phonestoppers-container a:hover,
+.phonestoppers-container a:visited:hover {
+	color: #f00 !important;
+	text-decoration-color: #f00;
+}
+
+
+
+
+
+

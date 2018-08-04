@@ -1,0 +1,46 @@
+.design-adjustments-0731 {
+	.l-header {
+		margin-bottom: 1em;
+		
+		@media screen and (min-width: $medium) {
+			font-size: calc(1em + 0.5 * ((100vw - 20em) / 60));
+			padding-left: 1.5em;
+			position: absolute;
+			text-align: left;
+			width: 20%;
+			margin-bottom: 0;
+		}
+	}
+	.u-masthead {
+		text-transform: none !important;
+		font-size: 2em;
+		font-family: "proxima-nova-condensed";
+		// letter-spacing: -0.016em;
+		
+		b {
+			font-weight: normal;
+		}
+		@media screen and (min-width: $medium) {
+			font-size: 1.4em;
+		}
+	}
+	.u-navsite-level-1 {
+		@media screen and (min-width: $medium) {
+			padding-right: 1em;
+		}
+		
+		a {
+			font-family: "adelle";
+			font-weight: normal;
+
+			@media screen and (min-width: $medium) {
+				border-bottom: 1px solid #ddd;
+				font-size: 1em;
+			}
+			@media screen and (min-width: $large) {
+				font-size: 1.1em;
+			}
+		}
+	}
+	
+}

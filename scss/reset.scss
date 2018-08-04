@@ -1,0 +1,1119 @@
+/*    HP-RESET
+	================================ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+ * Vassar College Normalize Stylesheet
+ * Based on normalize.css (http://github.com/necolas/normalize.css)
+ * v1.0
+ * Last Updated: 2012-10-19
+ */
+/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/* ========================================================================
+   HTML5 display definitions
+   ======================================================================== */
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+[hidden] {
+  display: none;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* ========================================================================
+   Base
+   ======================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+  /** EDIT - ALREADY IN RESET */
+  /*  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+textarea {
+  font-family: sans-serif;
+}
+
+/* ========================================================================
+   Typography
+   ======================================================================== */
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ * dnf[title] from html Doctor HTML5 reset
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+strong {
+  font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+p,
+pre {
+  margin: 0 0 1.6em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+q {
+  quotes: none;
+}
+
+/* 2 */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ========================================================================
+   Lists
+   ======================================================================== */
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
+/**
+ * EDIT - CHANGED
+ * DON'T TARGET HTML5 ELEMENTS IN THIS CASE, USE .NAV INSTEAD
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+*/
+/* ========================================================================
+   Embedded content
+   ======================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  /* border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ========================================================================
+   Forms
+   ======================================================================== */
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+legend {
+                                         /* border: 0; /* 1 *
+padding: 0; */
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ 
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+I have a more extended rule
+*/
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="search"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* Clearfix for modern browsers */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  *zoom: 1;
+}
+
+/* Vassar College Common Stylesheet
+ * v1.0
+ * Last Updated: 2012-10-19 
+ *
+ * Styles that are common to all sites but are not modules. Mostly for accessibility.
+ */
+/* ========================================================================
+   Layout
+   ======================================================================== */
+@media screen {
+  /* Image Replacement (non-transparent images)
+   * http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
+  -----------------------------------------------*/
+  .ir {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .ir:before {
+    display: -moz-inline-block;
+    /* for Firefox 1.5 & 2 */
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  /* :hover hack for IE8 if no a:hover styles declared */
+  .ir:hover {
+    cursor: pointer;
+  }
+
+  /* IE 6/7 */
+  .ir {
+    *text-indent: -9999em;
+  }
+
+  /* hack for IE6 */
+  .ir:hover {
+    _margin: 0;
+  }
+
+  /*
+   * SAMPLE for your extension
+   *
+  
+  --- Define width and height
+  .ir-yourextension {
+     	height:40px;
+     	width:150px;		
+  }		
+  
+  	--- Define image
+  	.ir-yourextension:before {
+  	   content:url(../images/image.png);
+  	}
+  	
+  	--- If using a sprite
+  	/* repositioning the sprite *
+  	.ir-yourextension:hover:before,
+  	.ir-yourextension:focus:before,
+  	.ir-yourextension:active:before {
+  		margin:-40px 0 0;
+  	}
+  
+  --- Hndle IE6/IE7
+  --- Define image
+  /* IE 6/7 *
+  .ir-yourextension {
+     *background:url(../images/image.png) no-repeat;
+  }
+  
+  	--- If using sprite
+  	.ir-yourextension:hover,	
+  	.ir-yourextension:active {
+  		*background-position:0 -40px;
+  	}
+  */
+  /* Image Replacement (transparent images)
+  /* http://nicolasgallagher.com/another-css-image-replacement-technique/
+  -----------------------------------------------*/
+  .ir-transparent {
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+  }
+
+  /*
+   * SAMPLE for your extension
+   *
+   
+   --- Define image, width, and height
+  .ir-transparent-yourextension {
+  	background: url(test.png);
+    	width: 300px;
+    	height: 75px;
+  }
+  */
+  .js .antifouc {
+    visibility: hidden;
+  }
+
+  .js .antifouc-show {
+    visibility: visible;
+  }
+
+  /* Hidden
+     ======================================================================== */
+  .hidden {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  /* Hide visually, make available for screenreaders by Thierry Koblentz - http://yaccessibilityblog.com/library/css-clip-hidden-content.html */
+  .ac-hiddenvisually {
+    border: 0 !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px !important;
+  }
+
+  .ac-hiddenvisually:active,
+  .ac-hiddenvisually:focus {
+    clip: auto;
+    height: auto !important;
+    overflow: visible;
+    position: static !important;
+    width: auto !important;
+  }
+
+  /* Navigation
+     ======================================================================== */
+  .nav,
+  form ul {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Skip link for accessibility
+     ======================================================================== */
+  #targetnavigation {
+    position: absolute;
+  }
+
+  .ac-skiplink {
+    position: absolute;
+    top: -9999em;
+    -moz-transition: background 100ms ease-in;
+    -ms-transition: background 100ms ease-in;
+    -o-transition: background 100ms ease-in;
+    -webkit-transition: background 100ms ease-in;
+    transition: background 100ms ease-in;
+  }
+
+  .ac-skiplink:active,
+  .ac-skiplink:focus,
+  .ac-skiplink:hover {
+    background: none repeat scroll 0 0 #ee6910;
+    -moz-box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.5);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.5);
+    box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.5);
+    font-family: arial;
+    font-weight: bold;
+    left: 0;
+    margin: 0;
+    padding: 0.6em 0.8em !important;
+    position: absolute !important;
+    right: 0;
+    text-shadow: 0 1px 1px rgba(50, 50, 50, 0.85);
+    top: 0;
+    z-index: 200;
+  }
+}
+/* Vassar College Standard Stylesheet
+ * v1.0
+ * Last Updated: 2012-10-22
+ *
+ * Default states for basic display. 
+ * If all else fails, these styles give a readable page.
+ * Closely related to reset.css.
+ * See "Sychronoized with reset styles" block
+ */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* HTML elements
+	========================================================================== */
+a {
+  text-decoration: none;
+  border-bottom: solid 1px black;
+  padding-bottom: 1px;
+}
+
+html {
+  font: 100%/1.75 Helvetica, Arial, sans-serif;
+}
+
+input,
+select,
+textarea {
+  font-size: 1em;
+  line-height: 1;
+}
+
+small {
+  font-size: 75%;
+}
+
+/* Classes
+	========================================================================== */
+.vcard {
+  /*	font:.75em Verdana, Helvetica, Arial, sans-serif; */
+}
+
+/* override reset backwards compatibility */
+.vcard-adr b {
+  font-weight: normal;
+}
+
+.vcard-office {
+  font-weight: normal;
+}
+
+.vcard-org {
+  font-weight: normal;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+@media screen {
+  /* HTML elements
+  	========================================================================== */
+  fieldset {
+    border-width: 1px;
+    border-style: solid;
+    margin: 0 0.25em;
+    padding: 0.35em 0.625em 0.75em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  table {
+    margin: 1em 0;
+  }
+
+  td,
+  th {
+    padding: .5em;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  /* Classes
+  ========================================================================== */
+  .figure,
+  .u-blocklevellink {
+    display: table;
+    width: auto;
+    /* 1px */
+  }
+
+  .figure-center,
+  .image-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .figure-left,
+  .image-left {
+    float: left;
+    margin-left: 0;
+  }
+
+  .figure-right,
+  .image-right {
+    float: right;
+    margin-right: 0;
+  }
+
+  .image-center {
+    display: block;
+  }
+
+  .u-navsite-level-1,
+  form ul {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .u-navsite-level-2,
+  .u-navsite-level-3,
+  .u-navsite-level-4,
+  .u-navsite-level-5,
+  .u-navsite-level-6 {
+    list-style: none;
+    list-style-type: none;
+  }
+
+  .u-navsite-level-1 a {
+    display: block;
+  }
+
+  /* vcard
+     ======================================================================== */
+  .vcard a {
+    margin-right: 1em;
+    position: relative;
+  }
+
+  		                 /*	.vcard a:after {
+  		color:#000;
+  		content:"\007C"; /* | 
+  		position:absolute;
+  		padding-left:.5em;
+  	}
+  */
+  .vcard-org a:after,
+  .vcard a:last-of-type:after,
+  .vcard-sites a:last-of-type:after {
+    content: "";
+  }
+}
+/* ==========================================================================
+   Color
+   ========================================================================== */
+/* HTML elements
+	========================================================================== */
+fieldset {
+  border-color: #c0c0c0;
+}
+
+html {
+  background-color: #fff;
+  color: #000;
+}
+
+/**
+ * Sychronoized with reset styles
+ */
+hr {
+  border-color: #ccc;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+}
+
+/**
+ * Sychronoized with reset styles
+ */
+/* Vassar College Standard Stylesheet
+ * v1.0
+ * Last Updated: 2012-10-22
+ *
+ * Default states for basic display. 
+ * If all else fails, these styles give a readable page.
+ * Closely related to reset.css.
+ * See "Sychronoized with reset styles" block
+ */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* HTML elements
+	========================================================================== */
+a {
+  text-decoration: none;
+  border-bottom: solid 1px black;
+  padding-bottom: 1px;
+}
+
+html {
+  font: 100%/1.75 Helvetica, Arial, sans-serif;
+}
+
+input,
+select,
+textarea {
+  font-size: 1em;
+  line-height: 1;
+}
+
+small {
+  font-size: 75%;
+}
+
+/* Classes
+	========================================================================== */
+.vcard {
+  /*	font:.75em Verdana, Helvetica, Arial, sans-serif; */
+}
+
+/* override reset backwards compatibility */
+.vcard-adr b {
+  font-weight: normal;
+}
+
+.vcard-office {
+  font-weight: normal;
+}
+
+.vcard-org {
+  font-weight: normal;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+@media screen {
+  /* HTML elements
+  	========================================================================== */
+  fieldset {
+    border-width: 1px;
+    border-style: solid;
+    margin: 0 0.25em;
+    padding: 0.35em 0.625em 0.75em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  table {
+    margin: 1em 0;
+  }
+
+  td,
+  th {
+    padding: .5em;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  /* Classes
+  ========================================================================== */
+  .figure,
+  .u-blocklevellink {
+    display: table;
+    width: auto;
+    /* 1px */
+  }
+
+  .figure-center,
+  .image-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .figure-left,
+  .image-left {
+    float: left;
+    margin-left: 0;
+  }
+
+  .figure-right,
+  .image-right {
+    float: right;
+    margin-right: 0;
+  }
+
+  .image-center {
+    display: block;
+  }
+
+  .u-navsite-level-1,
+  form ul {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .u-navsite-level-2,
+  .u-navsite-level-3,
+  .u-navsite-level-4,
+  .u-navsite-level-5,
+  .u-navsite-level-6 {
+    list-style: none;
+    list-style-type: none;
+  }
+
+  .u-navsite-level-1 a {
+    display: block;
+  }
+
+  /* vcard
+     ======================================================================== */
+  .vcard a {
+    margin-right: 1em;
+    position: relative;
+  }
+
+  		                 /*	.vcard a:after {
+  		color:#000;
+  		content:"\007C"; /* | 
+  		position:absolute;
+  		padding-left:.5em;
+  	}
+  */
+  .vcard-org a:after,
+  .vcard a:last-of-type:after,
+  .vcard-sites a:last-of-type:after {
+    content: "";
+  }
+}
+/* ==========================================================================
+   Color
+   ========================================================================== */
+/* HTML elements
+	========================================================================== */
+fieldset {
+  border-color: #c0c0c0;
+}
+
+html {
+  background-color: #fff;
+  color: #000;
+}
+
+/**
+ * Sychronoized with reset styles
+ */
+hr {
+  border-color: #ccc;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+}
+
+/**
+ * Sychronoized with reset styles
+ */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-phone-16px, .icon-menu, .icon-arrow-up-left, .icon-arrow-up, .icon-arrow-up-right, .icon-arrow-right, .icon-arrow-down-right, .icon-arrow-down, .icon-arrow-down-left, .icon-arrow-left, .icon-bubble, .icon-close, .icon-checkmark, .icon-feed, .icon-location, .icon-tag, .icon-star, .icon-search, .icon-warning, .icon-forward, .icon-twitter, .icon-play, .icon-facebook, .icon-cog, .icon-mail, .icon-mug, .icon-phone, .icon-music, .icon-play-2, .icon-paperclip {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-phone-16px:before {
+  content: "\e019";
+}
+
+.icon-menu:before {
+  content: "\e000";
+}
+
+.icon-arrow-up-left:before {
+  content: "\e001";
+}
+
+.icon-arrow-up:before {
+  content: "\e002";
+}
+
+.icon-arrow-up-right:before {
+  content: "\e003";
+}
+
+.icon-arrow-right:before {
+  content: "\e004";
+}
+
+.icon-arrow-down-right:before {
+  content: "\e005";
+}
+
+.icon-arrow-down:before {
+  content: "\e006";
+}
+
+.icon-arrow-down-left:before {
+  content: "\e007";
+}
+
+.icon-arrow-left:before {
+  content: "\e008";
+}
+
+.icon-bubble:before {
+  content: "\e009";
+}
+
+.icon-close:before {
+  content: "\e00a";
+}
+
+.icon-checkmark:before {
+  content: "\e00b";
+}
+
+.icon-feed:before {
+  content: "\e00c";
+}
+
+.icon-location:before {
+  content: "\e00d";
+}
+
+.icon-tag:before {
+  content: "\e00e";
+}
+
+.icon-star:before {
+  content: "\e00f";
+}
+
+.icon-search:before {
+  content: "\e010";
+}
+
+.icon-warning:before {
+  content: "\e011";
+}
+
+.icon-forward:before {
+  content: "\e013";
+}
+
+.icon-twitter:before {
+  content: "\e014";
+}
+
+.icon-play:before {
+  content: "\e015";
+}
+
+.icon-facebook:before {
+  content: "\e016";
+}
+
+.icon-cog:before {
+  content: "\e017";
+}
+
+.icon-mail:before {
+  content: "\e01a";
+}
+
+.icon-mug:before {
+  content: "\e018";
+}
+
+.icon-phone:before {
+  content: "\e01b";
+}
+
+.icon-music:before {
+  content: "\e012";
+}
+
+.icon-play-2:before {
+  content: "\e01c";
+}
+
+.icon-paperclip:before {
+  content: "\e01d";
+}

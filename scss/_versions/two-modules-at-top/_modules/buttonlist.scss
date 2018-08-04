@@ -1,0 +1,50 @@
+	.buttonList {
+		margin: 0;
+		padding: 0;
+		
+		.buttonList__item {
+			list-style: none;
+			margin-top: 0.8em;
+	
+			@media (min-width: $medium) {
+				display: flex;
+			}
+			
+			&:first-child {
+				margin-top: 0;
+			}
+			
+			.button__desc {
+				color: #666;
+				font-size: 0.9em;
+				font-weight: normal;
+				margin: 0.4em auto;
+				max-width: 22em;
+				
+				@media (min-width: $small) {
+					max-width: none;
+				}
+				@media (min-width: $medium) {
+					width: 60%;
+					padding-left: 0.4em;
+				}
+			}
+			.button {
+				text-align: center;
+				justify-content: center;
+				flex-direction: column;
+				text-align: center;
+				display: block;
+	
+				max-width: 10em;
+				margin-left: auto;
+				margin-right: auto;
+	
+				@media (min-width: $medium) {
+					display: flex;
+					width: 40%;
+					margin-right: 0.4em;
+				}
+			}
+		}
+	}

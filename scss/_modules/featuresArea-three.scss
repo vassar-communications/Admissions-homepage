@@ -1,0 +1,41 @@
+.highlights {
+    background:#F0EEEB;
+    padding: 2em;
+
+	@media (min-width: 900px) {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+
+	h3 {
+	    width: 100%;
+	    margin-bottom: 1em;
+	    text-transform: uppercase;
+	    font-size: 1em;
+	    letter-spacing: 0.1em;
+	}
+	.highlight {
+	    padding: 0 0.5em;
+
+		@media (min-width: 900px) {
+		    width: 33.33%;
+		}
+		a {
+			transition: ease 0.5s all;
+		}
+		a, a:visited {
+			color: #882344;
+		}
+		a:hover, a:visited:hover {
+			color: #000;
+			opacity: 0.4;
+		}
+		img {
+			border: 2px solid #fff;
+		    width: 100%;
+		}
+		.caption {
+			font-size: 0.9em;
+		}
+	}
+}

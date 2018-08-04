@@ -1,0 +1,104 @@
+
+Two modules at top
+==================
+
+This is the first design I did—it had the two colorful modules at the top of the page, and one was a yellow box with tabs. I don't think we're using this any more, although the markup is still in the page.
+
+The markup is below.
+
+
+
+
+
+<div class="row newModules">
+    <div class="modules__container">
+        <div class="hp-module module--apply">
+            <h2>Start Here</h2>
+            <div class="module__content">
+                <ul class="buttonList">
+                    <li class="buttonList__item">
+                        <a class="button button--apply" href="/apply/">Apply</a>
+                        <p class="button__desc">Everything you need to apply to Vassar College</p>
+                    </li>
+                    <li class="buttonList__item">
+                        <a class="button button--learnmore" href="https://apply.vassar.edu/register/requestinfo">Get Info</a>
+                        <p class="button__desc">Get our viewbook, events notifications, etc.</p>
+                    </li>
+                    <li class="buttonList__item">
+                        <a class="button button--status" href="http://apply.vassar.edu/status">Status</a>
+                        <p class="button__desc">Find out the status of your Vassar application</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hp-module module--info">
+            <h2>Important Dates</h2>
+            <div class="module__content">
+                <ul role="tablist" class="admissions__tablist">
+                    <li role="tab" tabindex="0" class="admissions__tab admissions__tab--short" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true">
+                        <a href="#deadlines" role="presentation" tabindex="-1" class="admissions__tabLink" id="ui-id-1">Deadlines</a>
+                    </li>
+                    <li role="tab" tabindex="0" class="admissions__tab admissions__tab--long" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false">
+                        <a href="#events" role="presentation" tabindex="-1" class="admissions__tabLink" id="ui-id-2">Events</a>
+                    </li>
+                </ul>
+                <div class="admissions__details admissions__details--tabbed" id="important-info">
+                    <div class="admissions__description admissions__description--short" id="deadlines">
+                        <ul class="index-list">
+                            <li>Early Decision I
+                                <em>Nov. 15</em>
+                            </li>
+                            <li>Early Decision II
+                                <em>Jan. 1</em>
+                            </li>
+                            <li>Regular Decision
+                                <em>Jan. 1</em>
+                            </li>
+                            <li>Spring Transfer
+                                <em>Nov. 1</em>
+                            </li>
+                            <li>Fall Transfer
+                                <em>Mar. 15</em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="admissions__description admissions__description--long" id="events" style="display: none;">
+                        <div class="infoSections">
+                            <div class="infoSection">
+                                <h3>Jan 15 
+                        <br>Feb 19–Feb 23 
+                        <br>Mar 26–Apr 30
+                    </h3>
+                                <ul>
+                                    <li>Tours: 9:30am, 12pm, and 2:30pm</li>
+                                    <li>Info sessions: 10:45am, 1:30pm</li>
+                                </ul>
+                            </div>
+                            <div class="infoSection">
+                                <h3>Feb 26–Mar 23 
+                        <br>May 1–June 22:
+                    </h3>
+                                <ul>
+                                    <li>Tours: 12pm, 2:30pm</li>
+                                    <li>Info session: 1:30pm</li>
+                                </ul>
+                            </div>
+                            <div class="infoSection">
+                                <h3>March 31 
+                        <br>April 7, 14, 21, 28
+                    </h3>
+                                <ul>
+                                    <li>Tours: 9:30am, 12pm</li>
+                                    <li>Info session: 10:45am</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="moreInfo">
+                            <a href="/visit/campus/">More info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

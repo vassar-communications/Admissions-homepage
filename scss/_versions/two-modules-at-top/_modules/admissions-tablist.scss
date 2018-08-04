@@ -1,0 +1,52 @@
+	.admissions__tablist {
+		margin-bottom: 1em;
+	    overflow: hidden;
+	    height: 2.2em;
+	    position: relative;
+	    
+	    &:after {
+		    position: absolute;
+		    content: "";
+		    width: 100%;
+		    border-bottom: 1px solid #aaa;
+		    bottom: 0;
+		    left: 0;
+	    }
+	    
+		li {
+			display: inline;
+			// margin-right: 0.4em;
+			
+			a {
+				font-weight: bold;
+				color: #aaa;
+				padding: 0.6em 0.6em 2em 0.6em;
+				display: inline-block;
+			}
+	
+			&[aria-selected="true"] {
+				position: relative;
+	
+				a {
+					color: #000;
+					border: 1px solid #aaa;
+					border-bottom: none;
+					border-radius: 0.2em;
+	
+					&:after {
+						content: "";
+						/* border: 2px solid #f00; */
+						width: calc(100% - 2px);
+						bottom: -0.6em;
+						height: 0.3em;
+						left: 1px;
+						position: absolute;
+						background: #fff;
+						right: 1px;
+						z-index: 3;
+						
+					}
+				}
+			}
+		}
+	}

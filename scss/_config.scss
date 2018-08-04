@@ -1,0 +1,43 @@
+
+
+
+$medium: 1000px;
+
+$small: 600px;
+$medium: 900px;
+$large: 1150px;
+
+/*    Primary colors */
+$VC__vassarBurgundy: #861f41;
+$VC__vassarGray: #746661;
+
+/*      Web colors */
+$VC__vassarVeryLightGray: #f8f7f6;
+$VC__vassarLightGray: #F0EEEB;
+$VC__vassarTextGray: #BFB9B0;
+$VC__vassarLinkPink: #ce1e46;
+$VC__vassarDullPink: #935966;
+$VC__vassarCharcoal: #5A5A5A;
+
+/*      Other colors */
+$VC__vassarRed: #f00;
+$VC__vassarYellow: #fb0;
+$VC__vassarBlue: #04f;
+
+$admissions-blue: #0080f8;
+$admissions-lightblue: #c8edff;
+$admissions-gold: #ffca57;
+$admissions-red: #e44f00;
+
+
+
+@mixin button($background-norm, $background-hover, $font-norm, $font-hover) {
+	&, &:visited {
+		background: $background-norm;
+		color: $font-norm;
+	}
+	&:hover, &:visited:hover {
+		background: $background-hover;
+		color: $font-hover;
+	}
+}

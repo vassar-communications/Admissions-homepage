@@ -1,0 +1,164 @@
+/* MODULES */
+/* FOOTER */
+.hp-footer {
+  background: #fff;
+  padding: 2em 2em 10em 2em;
+  text-align: center;
+  font-family: "proxima-nova";
+  font-size: 16px;
+  font-size: 1rem;
+  /*	font-size: 1rem;
+  */
+}
+
+.hp-footer b.vcard-label {
+  font-family: "proxima-nova-condensed";
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+.hp-footer b.vcard-label:after {
+  content: ":";
+}
+
+.hp-footer {
+  color: #333;
+}
+
+.hp-footer a {
+  border: none;
+}
+
+.hp-footer b.vcard-org a {
+  font-weight: 700;
+}
+
+.vcard-info li,
+.vcard-sites li {
+  display: inline;
+}
+
+.vcard-org {
+  font-family: "adelle";
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-bottom: 3px double #cccccc;
+  padding-bottom: 9.6px;
+  padding-bottom: 0.6rem;
+  margin-bottom: 9.6px;
+  margin-bottom: 0.6rem;
+}
+
+.vcard-info,
+.vcard-adr,
+.vcard-site,
+.vcard-org {
+  margin-bottom: 9.6px;
+  margin-bottom: 0.6rem;
+}
+.vcard .vcard-tel {
+  margin: 0;
+}
+
+
+/*	==========
+	NEW DESIGN
+	========== */
+
+.hp-footer a {
+	color: #882344 !important;
+	text-decoration: underline;
+	text-decoration-color: #ccc;
+}
+.hp-footer a:hover,
+.hp-footer a:visited:hover {
+	color: #f00 !important;
+	text-decoration-color: #f00;
+}
+.hp-footer {
+	margin-top: 3em;
+}
+
+
+
+
+
+
+
+/*	Important links */
+
+.important_links {
+	ul {
+		margin: 1em 0;
+		background: #eee;
+		padding: 0.2em 0.8em;
+		width: auto;
+		display: inline-block;
+
+		li {
+			@media screen and (min-width: 600px) {
+				display: inline;
+			}
+			
+			&:after {
+				content: "·";
+				margin-left: 0.7em;
+				margin-right: 0.7em;
+			}
+			&:last-child:after {
+				display: none;
+			}
+			
+			a {
+				font-size: 0.9em;
+				
+				&:link, &:visited {
+					color: #666;
+				}
+				&:hover, &:visited:hover, &:active {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+
+/*	Fixed position bar */
+
+.fixed_links {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    padding: 2em 1.4em;
+    z-index: 9999;
+}
+.fixed_links ul {
+    margin: 0;
+    padding: 0;
+}
+.fixed_links li {
+    display: inline;
+    padding:0;
+    margin:0;
+}
+.fixed_links li a {
+    padding: 1em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    
+    &:link, &:visited {
+	    background: #882344;
+	    color: #fff !important;
+    }
+    &:hover, &:visited:hover {
+	    background: #000;
+	    color: #fff !important;
+    }
+}
+
+

@@ -1,0 +1,109 @@
+.hp-requestInfo {
+  display: block;
+  margin-top: 1em;
+}
+
+.hp-requestInfo a {
+  display: block;
+  padding: 4%;
+  background: #CC3D04;
+  position: relative;
+  background: #9E2D00;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  font-size: 1em;
+  color: #fcc900;
+}
+
+.hp-requestInfo a strong {
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: 1px;
+}
+
+.hp-requestInfo a:hover {
+  background: #CC3D04;
+}
+
+.hp-requestInfo a:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  bottom: 3px;
+  left: 2px;
+  border: 1px solid #d57800;
+  border-right: none;
+  border-left: none;
+}
+
+
+@media all and (min-width: 900px) {
+  .hp-requestInfo a {
+    background: #9E2D00;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    height: 40px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    font-size: .8em;
+    color: #fcc900;
+  }
+
+  .hp-requestInfo a strong {
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: 1px;
+  }
+
+  .hp-requestInfo a:hover {
+    background: #CC3D04;
+  }
+
+  .hp-requestInfo a:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    bottom: 3px;
+    left: 2px;
+    border: 1px solid #d57800;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+
+/*	==========
+	NEW DESIGN
+	========== */
+
+.module--requestInfo a {
+	color: #882344 !important;
+	text-decoration: underline;
+	text-decoration-color: #ccc;
+}
+.module--requestInfo a:hover,
+.module--requestInfo a:visited:hover {
+	color: #f00 !important;
+	text-decoration-color: #f00;
+}
+.mainRow__module.module--requestInfo {
+	margin: 1em;
+}
+
+
+
+
+
+
+
+
+

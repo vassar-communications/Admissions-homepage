@@ -1,0 +1,528 @@
+/*	This is for the old scroller, which we are getting rid of. */
+
+
+
+.scroller-test {
+	display: none;
+}
+.wf-error .scroller-test {
+	display: none;
+}
+
+
+/*	------	*/
+.scroller-test {
+  display: none;
+}
+
+.scroller-test em {
+  font-style: italic;
+}
+
+.scroller-item img {
+  width: 100%;
+}
+
+.stories {
+  background: #000;
+  padding: 0 6% 6% 6%;
+}
+
+.stories a {
+  color: #fff;
+}
+
+.stories h2 {
+  color: #888;
+  border: none;
+}
+
+.stories li {
+  border-top: 1px dashed #444444;
+  margin-top: 0.4em 0;
+  padding: 0.4em 0;
+}
+
+.stories li a {
+  color: #fcc900;
+  font-size: .9em;
+}
+
+.stories li:last-child {
+  text-align: right;
+  padding-top: 1em;
+}
+
+.stories li:last-child a {
+  color: #fcc900;
+  font-size: 1em;
+  font-family: "proxima-nova-condensed";
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.stories li:last-child a:after {
+  content: "\21A3";
+  margin-left: 4px;
+}
+
+.stories .scroller-caption {
+  font-size: 1.2em;
+  padding: 0.3em 0 1em 0;
+}
+
+.stories .scroller-caption:before {
+  font-family: "icomoon";
+  content: "\e002";
+  margin-right: .3em;
+  color: #777;
+  font-size: .8em;
+}
+
+@media all and (min-width: 640px) and (max-width: 900px) {
+  .scroller-test {
+    display: block;
+  }
+
+  .stories {
+    overflow: hidden;
+  }
+
+  .stories .scroller-caption {
+    font-size: 1em;
+  }
+
+  .stories .feature-story {
+    float: left;
+    width: 50%;
+    margin-right: 1%;
+  }
+
+  .stories ul {
+    width: 47%;
+    float: right;
+  }
+}
+@media all and (min-width: 640px) {
+  .scroller {
+    position: relative;
+    width: 100%;
+  }
+
+  .scroller-scrollableArea {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* If you don't want the images in the scroller to be selectable, try the following
+       block of code. It's just a nice feature that prevent the images from
+       accidentally becoming selected/inverted when the user interacts with the scroller. */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  .scroller-test .scroller-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    position: absolute;
+    padding: .5em;
+    right: 0;
+    font-size: .85em;
+    display: inline;
+    width: auto;
+  }
+
+  .scroller-test .scroller-container {
+    display: table;
+    height: auto;
+    padding-left: 0;
+    white-space: nowrap;
+    margin-top: 6em;
+    margin-top/*\**/: 0\9;
+    /*    margin-top: 6em;
+    */
+  }
+
+  .js .scroller-test .scroller-container {
+    display: block;
+  }
+
+  .scroller-test .scroller-item {
+    display: block;
+    float: left;
+    margin-right: 1em;
+    position: relative;
+  }
+
+  .scroller-test .scroller-item:last-child {
+    margin-right: 0;
+    position: absolute;
+    left: 95%;
+  }
+
+  .scroller-test .scroller-item img {
+    /* min-width:100%; */
+    height: auto;
+    height: 512px;
+    width: auto;
+  }
+
+  .scroller-test {
+    overflow-x: scroll;
+  }
+
+  div.scrollwrapper {
+    height: auto;
+  }
+
+  .scroller-test .panel-1 {
+    width: 470px;
+    height: 512px;
+    white-space: normal;
+    margin-left: 1em;
+  }
+
+  .scroller-test .panel-1 a.panel-intro {
+    position: absolute;
+    font-weight: 300;
+    height: 220px;
+    background: #fcc900;
+    width: 470px;
+    line-height: 150%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding: 1.4em;
+  }
+
+  .scroller-test .panel-1 em {
+    font-style: italic;
+  }
+
+  /*	NEWS SECTION
+  ------------ */
+  .scroller-test .panel-1 .news-links h2 {
+    color: #facb00;
+    border-bottom: 1px dashed #444444;
+    font-size: 0.8em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0 0 0.4em 0;
+    padding: 0 0 0.4em 0;
+  }
+
+  .scroller-test .panel-1 .news-links li {
+    padding: 0.2em 0;
+    border-bottom: 1px dotted #444444;
+  }
+
+  .scroller-test .panel-1 .news-links li:last-child {
+    border: none;
+  }
+
+  .scroller-test .panel-1 .news-links li a {
+    padding: 0.1em 0;
+    color: #ddd;
+    display: block;
+    font-size: .8em;
+  }
+
+  .scroller-test .panel-1 .news-links li a:hover {
+    color: #ffcc00;
+  }
+
+  .scroller-test .news-view-all {
+    font-size: 14.4px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .scroller-test .news-links {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    margin-top: 260px;
+    background: #000;
+    height: 256px;
+    padding: 1.4em;
+    overflow: auto;
+  }
+
+  .scroller-test .scroller-container {
+    margin-top: 3em;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 989px) {
+  .scroller-test .scroller-container {
+    margin-top: 224px;
+    margin-top: 14em;
+    	/*	margin-top: 14em;
+        */
+  }
+}
+
+@media all and (min-width: 900px) and (max-width: 1149px) {
+  .scroller-test .scroller-container {
+    margin-top: 86.4px;
+    margin-top: 3.2em;
+    	/*	margin-top: 14em;
+        */
+  }
+}
+.scroller-test .scroller-container {
+  margin-top/*\**/: 70.4px\9;
+}
+
+@media all and (min-width: 1024px) {
+  /*	NEWS SECTION
+  	------------ */
+  .news-links a {
+    color: #fff;
+  }
+
+  .news-links a:hover {
+    color: #facb00;
+  }
+
+  .news-view-all a {
+    color: #aaa;
+  }
+}
+/*	MOBILE SCROLLER
+	--------------- */
+.mobileFeatures {
+  padding: 1em 0;
+}
+
+.mobileFeatures li a {
+  display: block;
+  clear: both;
+  margin: 0 4%;
+  padding: .5em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-scroller .scroller-caption {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding: 1em 0;
+  margin: 0 1em;
+}
+
+.news-annos li a {
+  padding: .5em 0;
+}
+
+@media all and (min-width: 400px) and (max-width: 900px) {
+  .mobileFeatures li {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    padding: 0 5%;
+  }
+
+  .mobileFeatures li:after {
+    content: "";
+    border-bottom: 3px double #eee;
+    width: 30%;
+    left: 35%;
+    position: absolute;
+  }
+
+  .mobileFeatures li a {
+    border: none;
+  }
+
+  .mobileFeatures {
+    -webkit-column-count: 2;
+    -webkit-column-rule: 3px double #eee;
+  }
+}
+/* IE8-only */
+@media \0screen {
+  .scroller-test .scroller-item {
+    margin-right: 0;
+  }
+
+  .scroller-test .panel-1 {
+    margin-left: 0;
+  }
+}
+
+
+
+/* You can alter this CSS in order to give Smooth Div Scroll your own look'n'feel */
+/* Invisible left hotspot */
+div.scrollingHotSpotLeft {
+  	/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
+      and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  	/* There is a big background image and it's used to solve some problems I experienced
+      in Internet Explorer 6. */
+  background-image: url(../images/smoothdivscroll/big_transparent.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  /*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
+  cursor: url(../images/smoothdivscroll/cursors/cursor_arrow_left.png), url(../images/smoothdivscroll/cursors/cursor_arrow_left.cur), w-resize;
+}
+
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible {
+  background-image: url(../images/smoothdivscroll/arrow_left.gif);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  /* Standard CSS3 opacity setting */
+  -moz-opacity: 0.35;
+  /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+  filter: alpha(opacity=35);
+  /* Opacity for Internet Explorer. */
+  zoom: 1;
+  /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
+}
+
+/* Invisible right hotspot */
+div.scrollingHotSpotRight {
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  background-image: url(../images/smoothdivscroll/big_transparent.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  cursor: url(../images/smoothdivscroll/cursors/cursor_arrow_right.png), url(../images/smoothdivscroll/cursors/cursor_arrow_right.cur), e-resize;
+}
+
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible {
+  background-image: url(../images/smoothdivscroll/arrow_right.gif);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+  -moz-opacity: 0.35;
+  zoom: 1;
+}
+
+/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+div.scrollableArea {
+  position: relative;
+  width: auto;
+  height: 100%;
+}
+
+
+
+/*	Ray scroller fix
+	---------------- */
+
+@media (min-width: 640px) {
+	.scroller-test .scroller-item {
+	 display: block;
+	 float: left;
+	 margin-right: .99em;
+	 position: relative;
+	}
+}
+
+
+@media all and (max-width: 640px) {
+    .scroller-test { display: none; }
+}
+
+
+
+/* LOCATION MODULE */
+/* Localized */
+.mobile-scroller {
+  margin-top: 1.5em;
+}
+
+.js .scroller-test {
+  display: none;
+}
+
+.wf-error .scroller-test {
+  display: block;
+}
+
+@media all and (min-width: 600px) {
+  .mobile-scroller {
+    margin-top: 9em;
+  }
+}
+@media all and (min-width: 900px) {
+  /*	interesting: if a CSS element is display-none'd, its JS doesn't load.
+  	After refreshing the page at phone size and increasing the width, the smoothdivscroll JS doesn't seem to have loaded.
+  */
+  .mobile-scroller {
+    display: none;
+  }
+
+  .js .scroller-test {
+    display: block;
+  }
+}
+
+a.panel-intro {
+  display: block;
+  font-family: "adelle";
+  color: #000;
+  font-size: 19.2px;
+  font-size: .9em;
+  font-weight: 100;
+  line-height: normal;
+  padding: 0 1em;
+}
+
+
+/*	======
+	New design
+	====== */
+
+	.scroller-test .scroller-item {
+		margin-left: 1em;
+	}
+	.mobile-scroller {
+		margin-top: 0;
+	}
+	@media (min-width: $medium) {
+		.scroller-test .scroller-container {
+		    margin-top: 1em;
+		}
+	}
+
+
+

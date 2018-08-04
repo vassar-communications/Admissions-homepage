@@ -1,0 +1,66 @@
+.module--viewbook {
+	padding: 20%;
+	background: #eee;
+}
+.mainRow__content {
+	margin: 0 auto;
+	max-width: 50em;
+	flex-wrap: wrap;
+
+	@media (min-width: $small) {
+		display: flex;
+	}
+	@media (min-width: $medium) {
+		float: left;
+	}
+}
+.module--intro {
+	@media (min-width: $small) {
+		padding: 1em 3em;
+		width: 70%;
+	}
+	@media (min-width: $medium) {
+	}
+}
+/*
+.module--viewbook {
+	a {
+		display: block;
+		text-align: center;
+	}
+	
+	@media (min-width: $small) {
+		width: 40%;
+		padding: 0 2em;
+		background: none;
+	}
+	@media (min-width: $medium) {
+		width: 20%;
+		padding: 1em 2em;
+	}
+}
+.module--viewbook {
+	img {
+		width: 100%;
+	}
+}
+
+*/
+.viewbook {
+	text-align: center;
+}
+.viewbook img {
+	width: 100%;
+	padding: 0 4em;
+
+	@media (min-width: $small) {
+		padding: 0;
+	}
+}
+.module--announcements {
+	@media (min-width: $small) {
+		width: 30% !important;
+	}
+}
+
+

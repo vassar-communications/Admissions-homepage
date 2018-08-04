@@ -1,0 +1,146 @@
+
+/* Localized */
+/*	HEADER
+	================================ */
+.l-header {
+  margin-top: 2.3rem;
+  text-align: center;
+  padding: 0;
+}
+
+.l-header img {
+  max-width: 100%;
+  margin-top: 0.9rem;
+}
+
+.u-masthead {
+  display: block;
+  width: auto;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  font-family: "adelle", serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  /*	height: 80px;
+  height: 5rem;
+  /*	height: 5rem;
+  */
+  color: #902c00;
+  padding: 0 6%;
+}
+
+.u-masthead strong {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  text-transform: lowercase;
+  font-size: 57.6px;
+  font-size: 3.6rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  padding-top: 9.6px;
+  padding-top: 0.6rem;
+  color: #000;
+  display: block;
+  border-top: 3px double #eeeeee;
+  letter-spacing: 2px;
+}
+
+.u-masthead .hp-vassar {
+  width: 50%;
+}
+
+@media all and (min-width: 600px) {
+  .u-masthead {
+    font-size: 64px;
+    font-size: 4rem;
+    /*    font-size: 4rem;
+      */
+    letter-spacing: 4px;
+  }
+
+  .u-masthead strong {
+    display: inline;
+    font-size: 96px;
+    font-size: 6rem;
+  }
+
+  .u-masthead {
+    max-width: 800px;
+  }
+
+  .u-masthead img {
+    /* max-width: 100%; */
+  }
+
+  .u-masthead .hp-vassar {
+    width: 30%;
+  }
+
+  .u-masthead .hp-admissions {
+    width: 55%;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 900px) {
+  .u-masthead {
+    height: 1.4em;
+  }
+}
+@media all and (min-width: 1150px) {
+  .u-masthead {
+    height: 99.2px;
+    height: 6.2rem;
+    /*		height: 6.2rem;
+      */
+  }
+}
+
+
+/*	======
+	New design
+	====== */
+
+/*	This provides space under the masthead to accommodate
+	the absolutely positioned nav */
+
+.l-header {
+	@media (min-width: 600px) and (max-width: 900px) {
+		margin-bottom: 9em !important;
+	}
+	@media (min-width: 900px) {
+		margin-bottom: 3.6em !important;
+	}
+	@media (min-width: 1150px) {
+		margin-bottom: 4em !important;
+	}
+}
+
+	.u-masthead {
+		font-family: proxima-nova;
+		text-transform: lowercase;
+		letter-spacing: 0;
+		font-weight: bold;
+		color: #000;
+		line-height: 1.4;
+		font-size: 3em;
+		
+		@media (min-width: $medium) {
+			font-size: 4em;
+		}
+	}
+	@media (min-width: 600px) and (max-width: 900px) {
+		.u-masthead {
+			margin-top: 0;
+		}
+	}
+	.u-masthead {
+		height: initial;
+		max-width: none !important;
+		padding: 0 !important;
+	}
+	
+
+
+
+
+

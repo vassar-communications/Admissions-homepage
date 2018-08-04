@@ -1,0 +1,63 @@
+/*	Tiles
+	===== */
+
+.features__row {
+    background: #882344;
+    padding-top: 1em;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAMUlEQ…JydA9gRJZC4aBrorFCkJvQ3YPN3YxEK8TnARp7htgABwABYhZZYFQsPwAAAABJRU5ErkJggg==) repeat;
+    background-size: 5px;
+    
+    background: url(https://www.vassar.edu/assets/images/about-mission-bg.png);
+}
+.features {
+    margin: 0 auto;
+    column-gap: 0;
+    -webkit-column-gap: 0;
+    padding: 3em;
+	padding: 4%;
+    padding-top: 0.4em;
+
+-webkit-column-break-inside:avoid;
+		-moz-column-break-inside:avoid;
+		-o-column-break-inside:avoid;
+		-ms-column-break-inside:avoid;
+		column-break-inside:avoid;
+		-webkit-backface-visibility:hidden;
+
+}
+@media (min-width: 640px) {
+	.features {
+	    column-count: 2;
+	    -webkit-column-count: 2;
+	}
+}
+@media (min-width: 900px) {
+	.features {
+	    column-count: 3;
+	    -webkit-column-count: 3;
+	}
+}
+
+.feature__item {
+	border: 1px solid transparent;
+    padding: 1em;
+    background: #fff;
+    margin: 0.4em;
+    display: inline-block;
+	box-shadow: 0 2px 14px rgba(0,0,0,0.2);
+}
+.feature__item:hover {
+	border-color: #882344;
+}
+.feature__item a {
+	display: block;
+}
+.feature__item a b {
+	color: #000;
+	margin-top: 0.2em;
+	font-size: 0.9em;
+}
+.features img {
+	width: 100%;
+}
+	

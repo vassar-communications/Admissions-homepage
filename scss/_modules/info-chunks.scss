@@ -1,0 +1,518 @@
+/*	INFO CHUNKS
+	================================ */
+.info-chunks {
+  padding: 6%;
+}
+
+.info-chunks li a {
+  color: inherit;
+}
+
+.info-chunks li p {
+  color: #000;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 130%;
+}
+
+.info-chunks h3 {
+  font-size: 1.2em;
+}
+
+.info-chunks li:hover,
+.info-chunks li:hover b {
+  color: #000;
+}
+
+.ic-students {
+  color: #a47800;
+}
+
+.ic-students b {
+  color: #f1b103;
+}
+
+.ic-students p {
+  color: #af8800;
+}
+
+.ic-faculty {
+  color: darkred;
+}
+
+.ic-faculty b, .ic-faculty p {
+  color: #ad3636;
+}
+
+.ic-avgclass, .ic-avgclass p {
+  color: #0184c8;
+}
+
+.ic-avgclass b {
+  color: #45b4ee;
+}
+
+.ic-avgaid, .ic-avgaid p {
+  color: #778c22;
+}
+
+.ic-avgaid b {
+  color: #8db000;
+}
+
+.ic-majors {
+  color: #5a4524;
+}
+
+.ic-majors b, .ic-majors p {
+  color: #8b6e3f;
+}
+
+.ic-teams {
+  color: #dc1657;
+}
+
+.ic-teams b, .ic-teams p {
+  color: #dc1657;
+}
+
+@media all and (min-width: 640px) {
+  .info-chunks h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .info-chunks li p {
+    font-size: 1.2em;
+  }
+}
+
+
+/* Remove this for IE8 */
+
+	@media all and (min-width: 640px) and (max-width: 949px) {
+	  .info-chunks h3 b {
+	    display: block;
+	    font-size: 1em;
+	  }
+	}
+	@media all and (min-width: 640px) and (max-width: 1149px) {
+	  .info-chunks,
+	  .info-chunks li p {
+	    background: #E9F7F6;
+	  }
+	
+	  .info-chunks li.info-vc p {
+	    font-family: "adelle";
+	    font-style: italic;
+	    color: #568187;
+	    line-height: 140%;
+	  }
+	
+	  .info-chunks {
+	    position: relative;
+	    padding: 4%;
+	  }
+	
+	  .info-chunks {
+	    overflow: hidden;
+	  }
+	
+	  .info-chunks ul {
+	    width: 48%;
+	  }
+	
+	  .info-chunks li {
+	    overflow: visible;
+	  }
+	
+	  .info-chunks li h3 {
+	    border-top: 1px dashed #b0d6d2;
+	    margin-top: -1px;
+	    width: 70%;
+	  }
+	
+	  /* How cool is this? */
+	  .info-chunks li:hover h3,
+	  .info-chunks li:hover + li h3,
+	  .info-chunks li.info-vc + li h3 {
+	    border-color: transparent;
+	  }
+	
+	  .info-chunks li h3 {
+	    -webkit-border-top-left-radius: 6px;
+	    -webkit-border-bottom-left-radius: 6px;
+	    -moz-border-radius-topleft: 6px;
+	    -moz-border-radius-bottomleft: 6px;
+	    border-top-left-radius: 6px;
+	    border-bottom-left-radius: 6px;
+	    margin: 0;
+	    text-align: left;
+	  }
+	
+	  .info-chunks li:hover {
+	    cursor: pointer;
+	    border-color: #fff;
+	  }
+	
+	  .info-chunks li:first-child h3 {
+	    border: none;
+	  }
+	
+	  .info-chunks h3 b {
+	    float: right;
+	  }
+	
+	  .info-chunks li p {
+	    display: none;
+	    text-transform: none;
+	    z-index: 3;
+	    padding: 5%;
+	    padding-left: 0;
+	    font-size: 1em;
+	    font-weight: 300;
+	    letter-spacing: 0;
+	    line-height: 125%;
+	  }
+	
+	  .info-chunks li.info-vc p,
+	  .info-chunks li:active p,
+	  .info-chunks li:hover p {
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    height: 100%;
+	    width: 50%;
+	  }
+	
+	  .info-chunks ul:hover .info-vc h3 {
+	    background: #E9F7F6;
+	    color: #000;
+	  }
+	
+	  .info-chunks .info-vc h3,
+	  .info-chunks:hover .info-vc h3:hover {
+	    background: black url("../images/hp/hp-infochunks-arrowbg.png") right no-repeat;
+	    border: none;
+	    color: #fff;
+	  }
+	
+	  .info-chunks h3 {
+	    font-size: 22.4px;
+	    font-size: 1.1em;
+	    /*       font-size: 1.4em;
+	      */
+	    border-right: none;
+	    padding: 6.4px 9.6px;
+	    padding: 0.4em 0.6em;
+	    	/*     padding: .4em .6em;
+	        */
+	  }
+	
+	  .info-chunks .info-vc h3,
+	  .info-chunks:hover .info-vc h3:hover,
+	  .info-chunks li:hover h3 {
+	    padding-right: 28.8px;
+	    padding-right: 1.8em;
+	    /*    	padding-right: 1.8em;
+	      */
+	  }
+	
+	  .info-chunks li:hover b {
+	    color: #fff;
+	    opacity: .7;
+	  }
+	
+	  .info-chunks .ic-students:hover h3 {
+	    color: #fff;
+	    background: #a47800;
+	  }
+	
+	  .info-chunks .ic-faculty:hover h3 {
+	    color: #fff;
+	    background: #8b0000;
+	  }
+	
+	  .info-chunks .ic-avgclass:hover h3 {
+	    color: #fff;
+	    background: #0184c8;
+	  }
+	
+	  .info-chunks .ic-avgaid:hover h3 {
+	    color: #fff;
+	    background: #778c22;
+	  }
+	
+	  .info-chunks .ic-majors:hover h3 {
+	    color: #fff;
+	    background: #8b6e3f;
+	  }
+	
+	  .info-chunks .ic-teams:hover h3 {
+	    color: #fff;
+	    background: #dc1657;
+	  }
+	
+	  .info-chunks li:hover h3 {
+	    background-image: url("../images/hp/hp-infochunks-arrowbg.png") !important;
+	    background-position: right !important;
+	    background-repeat: no-repeat !important;
+	  }
+	}
+
+
+
+@media all and (min-width: 1150px) {
+  .info-chunks,
+  .info-chunks li p {
+    background: #E9F7F6;
+  }
+
+  .info-chunks {
+    text-align: center;
+    display: block;
+    margin-top: 1.4em;
+    margin-bottom: .4em;
+    padding: 1%;
+    border-top: 1px dashed #cce6e3;
+    border-bottom: 1px dashed #cce6e3;
+  }
+
+  .info-chunks h3 {
+    font-size: .8em;
+    margin-top: 0;
+  }
+
+  .info-chunks ul {
+    border-top: 1px solid #b0d6d2;
+    padding-top: 0;
+    margin-top: 7.5em;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    width: 1224px;
+  }
+
+  .info-chunks li {
+    text-align: center;
+    font-family: "proxima-nova";
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-transform: uppercase;
+    padding: 1.1em 1.2em 0 1.2em;
+    margin: -3px -0.2em 0 -0.2em;
+  }
+
+  .info-chunks li:hover {
+    cursor: pointer;
+  }
+
+  .info-chunks li:hover {
+    background: url("../images/hp/ic-top-balloon.png") top center no-repeat;
+  }
+
+  .info-chunks li b {
+    font-size: 64px;
+    font-size: 4em;
+    /*                    font-size: 4em;
+      */
+    font-weight: 700;
+    display: block;
+  }
+
+  .info-chunks li p {
+    position: absolute;
+    top: -147.2px;
+    top: -7em;
+    left: 0;
+    display: none;
+    text-transform: none;
+    z-index: 3;
+    padding: 16px;
+    padding: 1em 1em 0.25em 1em;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 125%;
+    color: #365C61;
+  }
+
+  .info-chunks li:hover p {
+    display: block;
+  }
+
+  .info-vc h3 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .info-vc, .info-vc:hover {
+    width: 6.15em;
+    height: 4em;
+    display: block;
+    /* ie7 */
+    display: inline-block;
+    background-image: url("../images/hp/vc.png"), url("../images/hp/ic-top-balloon.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, 27px 0;
+    background-image: url("../images/hp/vc.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-bottom: -1px !important;
+  }
+
+  .info-chunks li.info-vc p {
+    top: -6em;
+    font-family: "adelle";
+    /*		font-style: italic; */
+    font-weight: 100;
+    color: #568187;
+    padding: 0.5em 10% 0 10%;
+    display: block;
+    z-index: 0;
+    font-size: 1.2em;
+    font-weight: 100;
+  }
+
+  .info-chunks ul:hover .info-vc {
+    background-image: url("../images/hp/vc.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+}
+
+
+
+/*	=====================
+	
+	NEW DESIGN - OVERRIDES
+	
+	===================== */
+
+
+/*	Info chunks
+	=========== */
+
+/*	Phone */
+
+.info-chunks, .info-chunks li p {
+    background: #f8f7f6;
+}
+.info-chunks h3 {
+	border-color: #ddd !important;
+	border-top-style: solid !important;
+}
+.info-chunks h3 a,
+.info-chunks h3 a * {
+	color: #882344 !important;
+}
+
+.info-chunks li:hover * {
+	color: #000 !important;
+}
+.info-chunks ul {
+    border-color: #ddd;
+}
+.info-chunks li.info-vc p {
+	color: #000 !important;
+}
+.info-chunks li p {
+	color: #000 !important;
+}
+.info-chunks .info-vc:hover {
+	background-color: transparent !important;
+	cursor: default;
+}
+.info-chunks li {
+	padding: 0;
+	margin-top: -1px;
+}
+.info-chunks .info-vc {
+	width: 0 !important;
+	background: none;
+	overflow: hidden;
+	height: 0;
+}
+
+
+/*	Tablet */
+
+
+/*	Desktop */
+
+
+@media (min-width: 600px) {
+	.scroller-test {
+		display: block;
+	}
+	.info-chunks h3:hover {
+		background: #000 !important;
+	    background-image: none !important;
+	    border-radius: 0;
+	}
+}
+@media (min-width: 640px) {
+	.info-chunks h3:hover {
+		background: none !important;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 1149px) {
+	.info-chunks, .info-chunks li p {
+	    background: #f8f7f6;
+	}
+	.info-chunks li:hover h3 {
+	    background: #000 !important;
+	    padding-right: 0.6em;
+	}
+	.info-chunks li:hover h3 * {
+	    color: #fff !important;					
+	}
+}			
+
+@media (min-width: 1150px) {
+	.info-chunks li b {
+	    font-size: 3em;
+	}			
+	.info-chunks h3 a:hover,
+	.info-chunks h3 a:hover * {
+		background: none !important;
+	}
+	.info-chunks {
+		border-color: #aaa;
+	}
+	.info-chunks li {
+		margin-top: 0;
+		/* padding: 1.1em 1.2em; */
+	}
+	.info-chunks li:hover {
+	    background-image: none;
+	    background: #ddd;
+	}
+	.info-chunks li:hover a {
+		color: #000 !important;
+	}
+	.info-chunks li a {
+		padding: 1.1em 1.2em;
+		display: block;
+	}
+}
+
+@media (min-width: $large) {
+	.info-vc, .info-vc:hover {
+		width: 8.15em;
+	}
+	.info-chunks li.info-vc p {
+		padding: 0.5em 20% 0 20%;
+	}
+}
+
