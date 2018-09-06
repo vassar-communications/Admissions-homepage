@@ -1,0 +1,3616 @@
+@charset "UTF-8";
+/*    Primary colors */
+/*      Web colors */
+/*      Other colors */
+/*    HP-RESET
+	================================ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 
+ * Vassar College Normalize Stylesheet
+ * Based on normalize.css (http://github.com/necolas/normalize.css)
+ * v1.0
+ * Last Updated: 2012-10-19
+ */
+/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/* ========================================================================
+   HTML5 display definitions
+   ======================================================================== */
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+[hidden] {
+  display: none; }
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* ========================================================================
+   Base
+   ======================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+  /** EDIT - ALREADY IN RESET */
+  /*  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+textarea {
+  font-family: sans-serif; }
+
+/* ========================================================================
+   Typography
+   ======================================================================== */
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ * dnf[title] from html Doctor HTML5 reset
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+p,
+pre {
+  margin: 0 0 1.6em 0; }
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+q {
+  quotes: none; }
+
+/* 2 */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ========================================================================
+   Lists
+   ======================================================================== */
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
+/**
+ * EDIT - CHANGED
+ * DON'T TARGET HTML5 ELEMENTS IN THIS CASE, USE .NAV INSTEAD
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+*/
+/* ========================================================================
+   Embedded content
+   ======================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  /* border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ========================================================================
+   Forms
+   ======================================================================== */
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+legend {
+                                         /* border: 0; /* 1 *
+padding: 0; */
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+button,
+input {
+  line-height: normal;
+  /* 1 */ }
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ 
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+I have a more extended rule
+*/
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="search"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* Clearfix for modern browsers */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  *zoom: 1; }
+
+/* Vassar College Common Stylesheet
+ * v1.0
+ * Last Updated: 2012-10-19 
+ *
+ * Styles that are common to all sites but are not modules. Mostly for accessibility.
+ */
+/* ========================================================================
+   Layout
+   ======================================================================== */
+@media screen {
+  /* Image Replacement (non-transparent images)
+   * http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
+  -----------------------------------------------*/
+  .ir {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+  .ir:before {
+    display: -moz-inline-block;
+    /* for Firefox 1.5 & 2 */
+    display: inline-block;
+    font-size: 0;
+    line-height: 0; }
+
+  /* :hover hack for IE8 if no a:hover styles declared */
+  .ir:hover {
+    cursor: pointer; }
+
+  /* IE 6/7 */
+  .ir {
+    *text-indent: -9999em; }
+
+  /* hack for IE6 */
+  .ir:hover {
+    _margin: 0; }
+
+  /*
+   * SAMPLE for your extension
+   *
+  
+  --- Define width and height
+  .ir-yourextension {
+     	height:40px;
+     	width:150px;		
+  }		
+  
+  	--- Define image
+  	.ir-yourextension:before {
+  	   content:url(../images/image.png);
+  	}
+  	
+  	--- If using a sprite
+  	/* repositioning the sprite *
+  	.ir-yourextension:hover:before,
+  	.ir-yourextension:focus:before,
+  	.ir-yourextension:active:before {
+  		margin:-40px 0 0;
+  	}
+  
+  --- Hndle IE6/IE7
+  --- Define image
+  /* IE 6/7 *
+  .ir-yourextension {
+     *background:url(../images/image.png) no-repeat;
+  }
+  
+  	--- If using sprite
+  	.ir-yourextension:hover,	
+  	.ir-yourextension:active {
+  		*background-position:0 -40px;
+  	}
+  */
+  /* Image Replacement (transparent images)
+  /* http://nicolasgallagher.com/another-css-image-replacement-technique/
+  -----------------------------------------------*/
+  .ir-transparent {
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent; }
+
+  /*
+   * SAMPLE for your extension
+   *
+   
+   --- Define image, width, and height
+  .ir-transparent-yourextension {
+  	background: url(test.png);
+    	width: 300px;
+    	height: 75px;
+  }
+  */
+  .js .antifouc {
+    visibility: hidden; }
+
+  .js .antifouc-show {
+    visibility: visible; }
+
+  /* Hidden
+     ======================================================================== */
+  .hidden {
+    display: none !important;
+    visibility: hidden; }
+
+  /* Hide visually, make available for screenreaders by Thierry Koblentz - http://yaccessibilityblog.com/library/css-clip-hidden-content.html */
+  .ac-hiddenvisually {
+    border: 0 !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px !important; }
+
+  .ac-hiddenvisually:active,
+  .ac-hiddenvisually:focus {
+    clip: auto;
+    height: auto !important;
+    overflow: visible;
+    position: static !important;
+    width: auto !important; }
+
+  /* Navigation
+     ======================================================================== */
+  .nav,
+  form ul {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0; }
+
+  /* Skip link for accessibility
+     ======================================================================== */
+  #targetnavigation {
+    position: absolute; }
+
+  .ac-skiplink {
+    position: absolute;
+    top: -9999em;
+    -moz-transition: background 100ms ease-in;
+    -ms-transition: background 100ms ease-in;
+    -o-transition: background 100ms ease-in;
+    -webkit-transition: background 100ms ease-in;
+    transition: background 100ms ease-in; }
+
+  .ac-skiplink:active,
+  .ac-skiplink:focus,
+  .ac-skiplink:hover {
+    background: none repeat scroll 0 0 #ee6910;
+    -moz-box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.5);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.5);
+    box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.5);
+    font-family: arial;
+    font-weight: bold;
+    left: 0;
+    margin: 0;
+    padding: 0.6em 0.8em !important;
+    position: absolute !important;
+    right: 0;
+    text-shadow: 0 1px 1px rgba(50, 50, 50, 0.85);
+    top: 0;
+    z-index: 200; } }
+/* Vassar College Standard Stylesheet
+ * v1.0
+ * Last Updated: 2012-10-22
+ *
+ * Default states for basic display. 
+ * If all else fails, these styles give a readable page.
+ * Closely related to reset.css.
+ * See "Sychronoized with reset styles" block
+ */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* HTML elements
+	========================================================================== */
+a {
+  text-decoration: none;
+  border-bottom: solid 1px black;
+  padding-bottom: 1px; }
+
+html {
+  font: 100%/1.75 Helvetica, Arial, sans-serif; }
+
+input,
+select,
+textarea {
+  font-size: 1em;
+  line-height: 1; }
+
+small {
+  font-size: 75%; }
+
+/* Classes
+	========================================================================== */
+.vcard {
+  /*	font:.75em Verdana, Helvetica, Arial, sans-serif; */ }
+
+/* override reset backwards compatibility */
+.vcard-adr b {
+  font-weight: normal; }
+
+.vcard-office {
+  font-weight: normal; }
+
+.vcard-org {
+  font-weight: normal; }
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+@media screen {
+  /* HTML elements
+  	========================================================================== */
+  fieldset {
+    border-width: 1px;
+    border-style: solid;
+    margin: 0 0.25em;
+    padding: 0.35em 0.625em 0.75em; }
+
+  p {
+    margin-bottom: 1em; }
+
+  table {
+    margin: 1em 0; }
+
+  td,
+  th {
+    padding: .5em; }
+
+  th {
+    font-weight: bold; }
+
+  /* Classes
+  ========================================================================== */
+  .figure,
+  .u-blocklevellink {
+    display: table;
+    width: auto;
+    /* 1px */ }
+
+  .figure-center,
+  .image-center {
+    margin-left: auto;
+    margin-right: auto; }
+
+  .figure-left,
+  .image-left {
+    float: left;
+    margin-left: 0; }
+
+  .figure-right,
+  .image-right {
+    float: right;
+    margin-right: 0; }
+
+  .image-center {
+    display: block; }
+
+  .u-navsite-level-1,
+  form ul {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0; }
+
+  .u-navsite-level-2,
+  .u-navsite-level-3,
+  .u-navsite-level-4,
+  .u-navsite-level-5,
+  .u-navsite-level-6 {
+    list-style: none;
+    list-style-type: none; }
+
+  .u-navsite-level-1 a {
+    display: block; }
+
+  /* vcard
+     ======================================================================== */
+  .vcard a {
+    margin-right: 1em;
+    position: relative; }
+
+  		                 /*	.vcard a:after {
+  		color:#000;
+  		content:"\007C"; /* | 
+  		position:absolute;
+  		padding-left:.5em;
+  	}
+  */
+  .vcard-org a:after,
+  .vcard a:last-of-type:after,
+  .vcard-sites a:last-of-type:after {
+    content: ""; } }
+/* ==========================================================================
+   Color
+   ========================================================================== */
+/* HTML elements
+	========================================================================== */
+fieldset {
+  border-color: #c0c0c0; }
+
+html {
+  background-color: #fff;
+  color: #000; }
+
+/**
+ * Sychronoized with reset styles
+ */
+hr {
+  border-color: #ccc; }
+
+ins {
+  background-color: #ff9;
+  color: #000; }
+
+mark {
+  background-color: #ff9;
+  color: #000; }
+
+/**
+ * Sychronoized with reset styles
+ */
+/* Vassar College Standard Stylesheet
+ * v1.0
+ * Last Updated: 2012-10-22
+ *
+ * Default states for basic display. 
+ * If all else fails, these styles give a readable page.
+ * Closely related to reset.css.
+ * See "Sychronoized with reset styles" block
+ */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* HTML elements
+	========================================================================== */
+a {
+  text-decoration: none;
+  border-bottom: solid 1px black;
+  padding-bottom: 1px; }
+
+html {
+  font: 100%/1.75 Helvetica, Arial, sans-serif; }
+
+input,
+select,
+textarea {
+  font-size: 1em;
+  line-height: 1; }
+
+small {
+  font-size: 75%; }
+
+/* Classes
+	========================================================================== */
+.vcard {
+  /*	font:.75em Verdana, Helvetica, Arial, sans-serif; */ }
+
+/* override reset backwards compatibility */
+.vcard-adr b {
+  font-weight: normal; }
+
+.vcard-office {
+  font-weight: normal; }
+
+.vcard-org {
+  font-weight: normal; }
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+@media screen {
+  /* HTML elements
+  	========================================================================== */
+  fieldset {
+    border-width: 1px;
+    border-style: solid;
+    margin: 0 0.25em;
+    padding: 0.35em 0.625em 0.75em; }
+
+  p {
+    margin-bottom: 1em; }
+
+  table {
+    margin: 1em 0; }
+
+  td,
+  th {
+    padding: .5em; }
+
+  th {
+    font-weight: bold; }
+
+  /* Classes
+  ========================================================================== */
+  .figure,
+  .u-blocklevellink {
+    display: table;
+    width: auto;
+    /* 1px */ }
+
+  .figure-center,
+  .image-center {
+    margin-left: auto;
+    margin-right: auto; }
+
+  .figure-left,
+  .image-left {
+    float: left;
+    margin-left: 0; }
+
+  .figure-right,
+  .image-right {
+    float: right;
+    margin-right: 0; }
+
+  .image-center {
+    display: block; }
+
+  .u-navsite-level-1,
+  form ul {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0; }
+
+  .u-navsite-level-2,
+  .u-navsite-level-3,
+  .u-navsite-level-4,
+  .u-navsite-level-5,
+  .u-navsite-level-6 {
+    list-style: none;
+    list-style-type: none; }
+
+  .u-navsite-level-1 a {
+    display: block; }
+
+  /* vcard
+     ======================================================================== */
+  .vcard a {
+    margin-right: 1em;
+    position: relative; }
+
+  		                 /*	.vcard a:after {
+  		color:#000;
+  		content:"\007C"; /* | 
+  		position:absolute;
+  		padding-left:.5em;
+  	}
+  */
+  .vcard-org a:after,
+  .vcard a:last-of-type:after,
+  .vcard-sites a:last-of-type:after {
+    content: ""; } }
+/* ==========================================================================
+   Color
+   ========================================================================== */
+/* HTML elements
+	========================================================================== */
+fieldset {
+  border-color: #c0c0c0; }
+
+html {
+  background-color: #fff;
+  color: #000; }
+
+/**
+ * Sychronoized with reset styles
+ */
+hr {
+  border-color: #ccc; }
+
+ins {
+  background-color: #ff9;
+  color: #000; }
+
+mark {
+  background-color: #ff9;
+  color: #000; }
+
+/**
+ * Sychronoized with reset styles
+ */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-phone-16px, .icon-menu, .icon-arrow-up-left, .icon-arrow-up, .icon-arrow-up-right, .icon-arrow-right, .icon-arrow-down-right, .icon-arrow-down, .icon-arrow-down-left, .icon-arrow-left, .icon-bubble, .icon-close, .icon-checkmark, .icon-feed, .icon-location, .icon-tag, .icon-star, .icon-search, .icon-warning, .icon-forward, .icon-twitter, .icon-play, .icon-facebook, .icon-cog, .icon-mail, .icon-mug, .icon-phone, .icon-music, .icon-play-2, .icon-paperclip {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+.icon-phone-16px:before {
+  content: "\e019"; }
+
+.icon-menu:before {
+  content: "\e000"; }
+
+.icon-arrow-up-left:before {
+  content: "\e001"; }
+
+.icon-arrow-up:before {
+  content: "\e002"; }
+
+.icon-arrow-up-right:before {
+  content: "\e003"; }
+
+.icon-arrow-right:before {
+  content: "\e004"; }
+
+.icon-arrow-down-right:before {
+  content: "\e005"; }
+
+.icon-arrow-down:before {
+  content: "\e006"; }
+
+.icon-arrow-down-left:before {
+  content: "\e007"; }
+
+.icon-arrow-left:before {
+  content: "\e008"; }
+
+.icon-bubble:before {
+  content: "\e009"; }
+
+.icon-close:before {
+  content: "\e00a"; }
+
+.icon-checkmark:before {
+  content: "\e00b"; }
+
+.icon-feed:before {
+  content: "\e00c"; }
+
+.icon-location:before {
+  content: "\e00d"; }
+
+.icon-tag:before {
+  content: "\e00e"; }
+
+.icon-star:before {
+  content: "\e00f"; }
+
+.icon-search:before {
+  content: "\e010"; }
+
+.icon-warning:before {
+  content: "\e011"; }
+
+.icon-forward:before {
+  content: "\e013"; }
+
+.icon-twitter:before {
+  content: "\e014"; }
+
+.icon-play:before {
+  content: "\e015"; }
+
+.icon-facebook:before {
+  content: "\e016"; }
+
+.icon-cog:before {
+  content: "\e017"; }
+
+.icon-mail:before {
+  content: "\e01a"; }
+
+.icon-mug:before {
+  content: "\e018"; }
+
+.icon-phone:before {
+  content: "\e01b"; }
+
+.icon-music:before {
+  content: "\e012"; }
+
+.icon-play-2:before {
+  content: "\e01c"; }
+
+.icon-paperclip:before {
+  content: "\e01d"; }
+
+html {
+  font-family: "proxima-nova"; }
+  html * {
+    box-sizing: border-box; }
+
+.body-container {
+  position: relative; }
+
+.wf-loading {
+  visibility: hidden; }
+
+body {
+  font-size: 19.2px;
+  font-size: 1.2em; }
+
+a {
+  text-decoration: none;
+  border: none;
+  color: #09c; }
+
+a:hover {
+  color: #f30; }
+
+p {
+  margin: 6.4px 0 19.2px 0;
+  margin: 0.4rem 0 1.2rem 0; }
+
+h2 {
+  font-size: 1.4em;
+  font-weight: 100;
+  font-family: "adelle";
+  padding: 0.7em 0;
+  border-bottom: 1px dashed #cccccc;
+  text-align: center; }
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 1.2em;
+  margin-bottom: 0.2em;
+  text-align: center; }
+
+/* DEFAULT ----------------------------- */
+.hidden, .ac-hiddenvisually {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0; }
+
+/* padding for all modules */
+/* Header */
+.more-link {
+  font-family: "proxima-nova-condensed";
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: right;
+  display: block;
+  margin-top: 16px;
+  margin-top: 1rem; }
+
+.more-link:after {
+  content: "\21A3";
+  margin-left: 4px; }
+
+/*	SCROLLER
+	================================ */
+body {
+  margin: 0; }
+
+/*	Fixes for universal nav
+	----------------------- */
+@media screen and (min-width: 600px) {
+  .PageContent {
+    margin-top: 0; } }
+@media (min-width: 1150px) {
+  .l-header {
+    margin-top: 0;
+    margin-bottom: 5.3em; } }
+.homepage .fixed_links {
+  display: none; }
+
+.button {
+  text-decoration: none;
+  color: #444;
+  padding: 0.5em;
+  border-radius: 0.34em;
+  font-size: 1.4em;
+  font-weight: 100;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 0.4em;
+  width: fit-content;
+  /* <---- */
+  border-bottom: none;
+  padding: 0.75em 1em;
+  border-radius: 0.5em; }
+  .button, .button:visited {
+    background: #eee;
+    color: #444; }
+  .button:hover, .button:visited:hover {
+    background: #000;
+    color: #fff; }
+
+.button--blue {
+  background: #0066c5;
+  box-shadow: inset 0 -2px 1px rgba(0, 0, 100, 0.4), inset 0 1px 2px #85c2e0;
+  color: #c8edff;
+  border: 1px solid #1277d6; }
+  .button--blue:hover {
+    background: #0071d9;
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 100, 0.4), inset 0 1px 2px #85c2e0; }
+  .button--blue:active {
+    background: #005bb1;
+    box-shadow: inset 0 2px 4px #000; }
+
+.reqinfo {
+  text-align: center;
+  padding: 1em;
+  border-top: 2px solid #eee;
+  margin-top: 1em; }
+  @media (min-width: 1024px) {
+    .reqinfo {
+      display: flex;
+      text-align: left; } }
+  .reqinfo .button__desc {
+    margin-top: 0.6em !important; }
+    @media (min-width: 1150px) {
+      .reqinfo .button__desc {
+        margin-top: 0 !important; } }
+
+.button.button--reqinfo {
+  background: #861f41;
+  color: #c8edff;
+  color: #d4bed3;
+  color: #fff;
+  display: inline-block;
+  margin: 0 auto;
+  width: fit-content;
+  /* <---- */
+  border-bottom: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  align-self: center;
+  transition: 0.4s all ease; }
+  .button.button--reqinfo:hover {
+    background: #a72751; }
+  .button.button--reqinfo:active {
+    background: #751b39; }
+
+.button__desc {
+  line-height: 1.1; }
+  @media (min-width: 900px) {
+    .button__desc {
+      padding-left: 1em; } }
+
+.mainRow__module.module--requestInfo p {
+  line-height: 1.2; }
+
+/*	INFO CHUNKS
+	================================ */
+.info-chunks {
+  padding: 6%; }
+
+.info-chunks li a {
+  color: inherit; }
+
+.info-chunks li p {
+  color: #000;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 130%; }
+
+.info-chunks h3 {
+  font-size: 1.2em; }
+
+.info-chunks li:hover,
+.info-chunks li:hover b {
+  color: #000; }
+
+.ic-students {
+  color: #a47800; }
+
+.ic-students b {
+  color: #f1b103; }
+
+.ic-students p {
+  color: #af8800; }
+
+.ic-faculty {
+  color: darkred; }
+
+.ic-faculty b, .ic-faculty p {
+  color: #ad3636; }
+
+.ic-avgclass, .ic-avgclass p {
+  color: #0184c8; }
+
+.ic-avgclass b {
+  color: #45b4ee; }
+
+.ic-avgaid, .ic-avgaid p {
+  color: #778c22; }
+
+.ic-avgaid b {
+  color: #8db000; }
+
+.ic-majors {
+  color: #5a4524; }
+
+.ic-majors b, .ic-majors p {
+  color: #8b6e3f; }
+
+.ic-teams {
+  color: #dc1657; }
+
+.ic-teams b, .ic-teams p {
+  color: #dc1657; }
+
+@media all and (min-width: 640px) {
+  .info-chunks h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
+
+  .info-chunks li p {
+    font-size: 1.2em; } }
+/* Remove this for IE8 */
+@media all and (min-width: 640px) and (max-width: 949px) {
+  .info-chunks h3 b {
+    display: block;
+    font-size: 1em; } }
+@media all and (min-width: 640px) and (max-width: 1149px) {
+  .info-chunks,
+  .info-chunks li p {
+    background: #E9F7F6; }
+
+  .info-chunks li.info-vc p {
+    font-family: "adelle";
+    font-style: italic;
+    color: #568187;
+    line-height: 140%; }
+
+  .info-chunks {
+    position: relative;
+    padding: 4%; }
+
+  .info-chunks {
+    overflow: hidden; }
+
+  .info-chunks ul {
+    width: 48%; }
+
+  .info-chunks li {
+    overflow: visible; }
+
+  .info-chunks li h3 {
+    border-top: 1px dashed #b0d6d2;
+    margin-top: -1px;
+    width: 70%; }
+
+  /* How cool is this? */
+  .info-chunks li:hover h3,
+  .info-chunks li:hover + li h3,
+  .info-chunks li.info-vc + li h3 {
+    border-color: transparent; }
+
+  .info-chunks li h3 {
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin: 0;
+    text-align: left; }
+
+  .info-chunks li:hover {
+    cursor: pointer;
+    border-color: #fff; }
+
+  .info-chunks li:first-child h3 {
+    border: none; }
+
+  .info-chunks h3 b {
+    float: right; }
+
+  .info-chunks li p {
+    display: none;
+    text-transform: none;
+    z-index: 3;
+    padding: 5%;
+    padding-left: 0;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 125%; }
+
+  .info-chunks li.info-vc p,
+  .info-chunks li:active p,
+  .info-chunks li:hover p {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%; }
+
+  .info-chunks ul:hover .info-vc h3 {
+    background: #E9F7F6;
+    color: #000; }
+
+  .info-chunks .info-vc h3,
+  .info-chunks:hover .info-vc h3:hover {
+    background: black url("../images/hp/hp-infochunks-arrowbg.png") right no-repeat;
+    border: none;
+    color: #fff; }
+
+  .info-chunks h3 {
+    font-size: 22.4px;
+    font-size: 1.1em;
+    /*       font-size: 1.4em;
+      */
+    border-right: none;
+    padding: 6.4px 9.6px;
+    padding: 0.4em 0.6em;
+    	/*     padding: .4em .6em;
+        */ }
+
+  .info-chunks .info-vc h3,
+  .info-chunks:hover .info-vc h3:hover,
+  .info-chunks li:hover h3 {
+    padding-right: 28.8px;
+    padding-right: 1.8em;
+    /*    	padding-right: 1.8em;
+      */ }
+
+  .info-chunks li:hover b {
+    color: #fff;
+    opacity: .7; }
+
+  .info-chunks .ic-students:hover h3 {
+    color: #fff;
+    background: #a47800; }
+
+  .info-chunks .ic-faculty:hover h3 {
+    color: #fff;
+    background: #8b0000; }
+
+  .info-chunks .ic-avgclass:hover h3 {
+    color: #fff;
+    background: #0184c8; }
+
+  .info-chunks .ic-avgaid:hover h3 {
+    color: #fff;
+    background: #778c22; }
+
+  .info-chunks .ic-majors:hover h3 {
+    color: #fff;
+    background: #8b6e3f; }
+
+  .info-chunks .ic-teams:hover h3 {
+    color: #fff;
+    background: #dc1657; }
+
+  .info-chunks li:hover h3 {
+    background-image: url("../images/hp/hp-infochunks-arrowbg.png") !important;
+    background-position: right !important;
+    background-repeat: no-repeat !important; } }
+@media all and (min-width: 1150px) {
+  .info-chunks,
+  .info-chunks li p {
+    background: #E9F7F6; }
+
+  .info-chunks {
+    text-align: center;
+    display: block;
+    margin-top: 1.4em;
+    margin-bottom: .4em;
+    padding: 1%;
+    border-top: 1px dashed #cce6e3;
+    border-bottom: 1px dashed #cce6e3; }
+
+  .info-chunks h3 {
+    font-size: .8em;
+    margin-top: 0; }
+
+  .info-chunks ul {
+    border-top: 1px solid #b0d6d2;
+    padding-top: 0;
+    margin-top: 7.5em;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    width: 1224px; }
+
+  .info-chunks li {
+    text-align: center;
+    font-family: "proxima-nova";
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-transform: uppercase;
+    padding: 1.1em 1.2em 0 1.2em;
+    margin: -3px -0.2em 0 -0.2em; }
+
+  .info-chunks li:hover {
+    cursor: pointer; }
+
+  .info-chunks li:hover {
+    background: url("../images/hp/ic-top-balloon.png") top center no-repeat; }
+
+  .info-chunks li b {
+    font-size: 64px;
+    font-size: 4em;
+    /*                    font-size: 4em;
+      */
+    font-weight: 700;
+    display: block; }
+
+  .info-chunks li p {
+    position: absolute;
+    top: -147.2px;
+    top: -7em;
+    left: 0;
+    display: none;
+    text-transform: none;
+    z-index: 3;
+    padding: 16px;
+    padding: 1em 1em 0.25em 1em;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 125%;
+    color: #365C61; }
+
+  .info-chunks li:hover p {
+    display: block; }
+
+  .info-vc h3 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
+
+  .info-vc, .info-vc:hover {
+    width: 6.15em;
+    height: 4em;
+    display: block;
+    /* ie7 */
+    display: inline-block;
+    background-image: url("../images/hp/vc.png"), url("../images/hp/ic-top-balloon.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, 27px 0;
+    background-image: url("../images/hp/vc.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-bottom: -1px !important; }
+
+  .info-chunks li.info-vc p {
+    top: -6em;
+    font-family: "adelle";
+    /*		font-style: italic; */
+    font-weight: 100;
+    color: #568187;
+    padding: 0.5em 10% 0 10%;
+    display: block;
+    z-index: 0;
+    font-size: 1.2em;
+    font-weight: 100; }
+
+  .info-chunks ul:hover .info-vc {
+    background-image: url("../images/hp/vc.png");
+    background-repeat: no-repeat;
+    background-position: bottom left; } }
+/*	=====================
+	
+	NEW DESIGN - OVERRIDES
+	
+	===================== */
+/*	Info chunks
+	=========== */
+/*	Phone */
+.info-chunks, .info-chunks li p {
+  background: #f8f7f6; }
+
+.info-chunks h3 {
+  border-color: #ddd !important;
+  border-top-style: solid !important; }
+
+.info-chunks h3 a,
+.info-chunks h3 a * {
+  color: #882344 !important; }
+
+.info-chunks li:hover * {
+  color: #000 !important; }
+
+.info-chunks ul {
+  border-color: #ddd; }
+
+.info-chunks li.info-vc p {
+  color: #000 !important; }
+
+.info-chunks li p {
+  color: #000 !important; }
+
+.info-chunks .info-vc:hover {
+  background-color: transparent !important;
+  cursor: default; }
+
+.info-chunks li {
+  padding: 0;
+  margin-top: -1px; }
+
+.info-chunks .info-vc {
+  width: 0 !important;
+  background: none;
+  overflow: hidden;
+  height: 0; }
+
+/*	Tablet */
+/*	Desktop */
+@media (min-width: 600px) {
+  .scroller-test {
+    display: block; }
+
+  .info-chunks h3:hover {
+    background: #000 !important;
+    background-image: none !important;
+    border-radius: 0; } }
+@media (min-width: 640px) {
+  .info-chunks h3:hover {
+    background: none !important; } }
+@media (min-width: 640px) and (max-width: 1149px) {
+  .info-chunks, .info-chunks li p {
+    background: #f8f7f6; }
+
+  .info-chunks li:hover h3 {
+    background: #000 !important;
+    padding-right: 0.6em; }
+
+  .info-chunks li:hover h3 * {
+    color: #fff !important; } }
+@media (min-width: 1150px) {
+  .info-chunks li b {
+    font-size: 3em; }
+
+  .info-chunks h3 a:hover,
+  .info-chunks h3 a:hover * {
+    background: none !important; }
+
+  .info-chunks {
+    border-color: #aaa; }
+
+  .info-chunks li {
+    margin-top: 0;
+    /* padding: 1.1em 1.2em; */ }
+
+  .info-chunks li:hover {
+    background-image: none;
+    background: #ddd; }
+
+  .info-chunks li:hover a {
+    color: #000 !important; }
+
+  .info-chunks li a {
+    padding: 1.1em 1.2em;
+    display: block; } }
+@media (min-width: 1150px) {
+  .info-vc, .info-vc:hover {
+    width: 8.15em; }
+
+  .info-chunks li.info-vc p {
+    padding: 0.5em 20% 0 20%; } }
+.intro {
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.3;
+  font-family: "adelle";
+  font-size: 1.3em;
+  font-weight: normal;
+  color: #444; }
+
+/*	This is for the old scroller, which we are getting rid of. */
+.scroller-test {
+  display: none; }
+
+.wf-error .scroller-test {
+  display: none; }
+
+/*	------	*/
+.scroller-test {
+  display: none; }
+
+.scroller-test em {
+  font-style: italic; }
+
+.scroller-item img {
+  width: 100%; }
+
+.stories {
+  background: #000;
+  padding: 0 6% 6% 6%; }
+
+.stories a {
+  color: #fff; }
+
+.stories h2 {
+  color: #888;
+  border: none; }
+
+.stories li {
+  border-top: 1px dashed #444444;
+  margin-top: 0.4em 0;
+  padding: 0.4em 0; }
+
+.stories li a {
+  color: #fcc900;
+  font-size: .9em; }
+
+.stories li:last-child {
+  text-align: right;
+  padding-top: 1em; }
+
+.stories li:last-child a {
+  color: #fcc900;
+  font-size: 1em;
+  font-family: "proxima-nova-condensed";
+  text-transform: uppercase;
+  color: #aaa; }
+
+.stories li:last-child a:after {
+  content: "\21A3";
+  margin-left: 4px; }
+
+.stories .scroller-caption {
+  font-size: 1.2em;
+  padding: 0.3em 0 1em 0; }
+
+.stories .scroller-caption:before {
+  font-family: "icomoon";
+  content: "\e002";
+  margin-right: .3em;
+  color: #777;
+  font-size: .8em; }
+
+@media all and (min-width: 640px) and (max-width: 900px) {
+  .scroller-test {
+    display: block; }
+
+  .stories {
+    overflow: hidden; }
+
+  .stories .scroller-caption {
+    font-size: 1em; }
+
+  .stories .feature-story {
+    float: left;
+    width: 50%;
+    margin-right: 1%; }
+
+  .stories ul {
+    width: 47%;
+    float: right; } }
+@media all and (min-width: 640px) {
+  .scroller {
+    position: relative;
+    width: 100%; }
+
+  .scroller-scrollableArea {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* If you don't want the images in the scroller to be selectable, try the following
+       block of code. It's just a nice feature that prevent the images from
+       accidentally becoming selected/inverted when the user interacts with the scroller. */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none; }
+
+  .scroller-test .scroller-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    position: absolute;
+    padding: .5em;
+    right: 0;
+    font-size: .85em;
+    display: inline;
+    width: auto; }
+
+  .scroller-test .scroller-container {
+    display: table;
+    height: auto;
+    padding-left: 0;
+    white-space: nowrap;
+    margin-top: 6em;
+    margin-top/*\**/: 0\9;
+    /*    margin-top: 6em;
+    */ }
+
+  .js .scroller-test .scroller-container {
+    display: block; }
+
+  .scroller-test .scroller-item {
+    display: block;
+    float: left;
+    margin-right: 1em;
+    position: relative; }
+
+  .scroller-test .scroller-item:last-child {
+    margin-right: 0;
+    position: absolute;
+    left: 95%; }
+
+  .scroller-test .scroller-item img {
+    /* min-width:100%; */
+    height: auto;
+    height: 512px;
+    width: auto; }
+
+  .scroller-test {
+    overflow-x: scroll; }
+
+  div.scrollwrapper {
+    height: auto; }
+
+  .scroller-test .panel-1 {
+    width: 470px;
+    height: 512px;
+    white-space: normal;
+    margin-left: 1em; }
+
+  .scroller-test .panel-1 a.panel-intro {
+    position: absolute;
+    font-weight: 300;
+    height: 220px;
+    background: #fcc900;
+    width: 470px;
+    line-height: 150%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding: 1.4em; }
+
+  .scroller-test .panel-1 em {
+    font-style: italic; }
+
+  /*	NEWS SECTION
+  ------------ */
+  .scroller-test .panel-1 .news-links h2 {
+    color: #facb00;
+    border-bottom: 1px dashed #444444;
+    font-size: 0.8em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0 0 0.4em 0;
+    padding: 0 0 0.4em 0; }
+
+  .scroller-test .panel-1 .news-links li {
+    padding: 0.2em 0;
+    border-bottom: 1px dotted #444444; }
+
+  .scroller-test .panel-1 .news-links li:last-child {
+    border: none; }
+
+  .scroller-test .panel-1 .news-links li a {
+    padding: 0.1em 0;
+    color: #ddd;
+    display: block;
+    font-size: .8em; }
+
+  .scroller-test .panel-1 .news-links li a:hover {
+    color: #ffcc00; }
+
+  .scroller-test .news-view-all {
+    font-size: 14.4px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0; }
+
+  .scroller-test .news-links {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    margin-top: 260px;
+    background: #000;
+    height: 256px;
+    padding: 1.4em;
+    overflow: auto; }
+
+  .scroller-test .scroller-container {
+    margin-top: 3em; } }
+@media all and (min-width: 640px) and (max-width: 989px) {
+  .scroller-test .scroller-container {
+    margin-top: 224px;
+    margin-top: 14em;
+    	/*	margin-top: 14em;
+        */ } }
+@media all and (min-width: 900px) and (max-width: 1149px) {
+  .scroller-test .scroller-container {
+    margin-top: 86.4px;
+    margin-top: 3.2em;
+    	/*	margin-top: 14em;
+        */ } }
+.scroller-test .scroller-container {
+  margin-top/*\**/: 70.4px\9; }
+
+@media all and (min-width: 1024px) {
+  /*	NEWS SECTION
+  	------------ */
+  .news-links a {
+    color: #fff; }
+
+  .news-links a:hover {
+    color: #facb00; }
+
+  .news-view-all a {
+    color: #aaa; } }
+/*	MOBILE SCROLLER
+	--------------- */
+.mobileFeatures {
+  padding: 1em 0; }
+
+.mobileFeatures li a {
+  display: block;
+  clear: both;
+  margin: 0 4%;
+  padding: .5em 0;
+  border-bottom: 1px solid #eee; }
+
+.mobile-scroller .scroller-caption {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding: 1em 0;
+  margin: 0 1em; }
+
+.news-annos li a {
+  padding: .5em 0; }
+
+@media all and (min-width: 400px) and (max-width: 900px) {
+  .mobileFeatures li {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    padding: 0 5%; }
+
+  .mobileFeatures li:after {
+    content: "";
+    border-bottom: 3px double #eee;
+    width: 30%;
+    left: 35%;
+    position: absolute; }
+
+  .mobileFeatures li a {
+    border: none; }
+
+  .mobileFeatures {
+    -webkit-column-count: 2;
+    -webkit-column-rule: 3px double #eee; } }
+/* IE8-only */
+@media \0screen {
+  .scroller-test .scroller-item {
+    margin-right: 0; }
+
+  .scroller-test .panel-1 {
+    margin-left: 0; } }
+/* You can alter this CSS in order to give Smooth Div Scroll your own look'n'feel */
+/* Invisible left hotspot */
+div.scrollingHotSpotLeft {
+  	/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
+      and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  	/* There is a big background image and it's used to solve some problems I experienced
+      in Internet Explorer 6. */
+  background-image: url(../images/smoothdivscroll/big_transparent.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  /*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
+  cursor: url(../images/smoothdivscroll/cursors/cursor_arrow_left.png), url(../images/smoothdivscroll/cursors/cursor_arrow_left.cur), w-resize; }
+
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible {
+  background-image: url(../images/smoothdivscroll/arrow_left.gif);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  /* Standard CSS3 opacity setting */
+  -moz-opacity: 0.35;
+  /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+  filter: alpha(opacity=35);
+  /* Opacity for Internet Explorer. */
+  zoom: 1;
+  /* Trigger "hasLayout" in Internet Explorer 6 or older versions */ }
+
+/* Invisible right hotspot */
+div.scrollingHotSpotRight {
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  background-image: url(../images/smoothdivscroll/big_transparent.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  cursor: url(../images/smoothdivscroll/cursors/cursor_arrow_right.png), url(../images/smoothdivscroll/cursors/cursor_arrow_right.cur), e-resize; }
+
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible {
+  background-image: url(../images/smoothdivscroll/arrow_right.gif);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+  -moz-opacity: 0.35;
+  zoom: 1; }
+
+/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+div.scrollableArea {
+  position: relative;
+  width: auto;
+  height: 100%; }
+
+/*	Ray scroller fix
+	---------------- */
+@media (min-width: 640px) {
+  .scroller-test .scroller-item {
+    display: block;
+    float: left;
+    margin-right: .99em;
+    position: relative; } }
+@media all and (max-width: 640px) {
+  .scroller-test {
+    display: none; } }
+/* LOCATION MODULE */
+/* Localized */
+.mobile-scroller {
+  margin-top: 1.5em; }
+
+.js .scroller-test {
+  display: none; }
+
+.wf-error .scroller-test {
+  display: block; }
+
+@media all and (min-width: 600px) {
+  .mobile-scroller {
+    margin-top: 9em; } }
+@media all and (min-width: 900px) {
+  /*	interesting: if a CSS element is display-none'd, its JS doesn't load.
+  	After refreshing the page at phone size and increasing the width, the smoothdivscroll JS doesn't seem to have loaded.
+  */
+  .mobile-scroller {
+    display: none; }
+
+  .js .scroller-test {
+    display: block; } }
+a.panel-intro {
+  display: block;
+  font-family: "adelle";
+  color: #000;
+  font-size: 19.2px;
+  font-size: .9em;
+  font-weight: 100;
+  line-height: normal;
+  padding: 0 1em; }
+
+/*	======
+	New design
+	====== */
+.scroller-test .scroller-item {
+  margin-left: 1em; }
+
+.mobile-scroller {
+  margin-top: 0; }
+
+@media (min-width: 900px) {
+  .scroller-test .scroller-container {
+    margin-top: 1em; } }
+.socialgraces {
+  /*  border-top: 1px solid #eeeeee;
+    border-top: 1px solid rgba(0,0,0,.1); */
+  margin-top: 1em;
+  overflow: hidden;
+  padding-top: 1em; }
+
+.socialgraces ul {
+  margin: 0; }
+
+.socialgraces h3 {
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-size: 1em;
+  /*	   font-size: 1em;
+  */
+  float: left;
+  text-transform: uppercase;
+  display: block;
+  margin: 0;
+  margin-right: 6.4px;
+  margin-right: 0.4em;
+  margin-right: .4em;
+  letter-spacing: 2px;
+  padding: 4.8px;
+  padding: 0.3em;
+  /*    padding: .3em;
+  */ }
+
+.socialgraces li {
+  float: left;
+  display: block;
+  list-style: none; }
+
+.socialgraces li.sg-icon {
+  position: relative;
+  width: 24px;
+  height: 24px; }
+
+.socialgraces li.sg-icon a {
+  position: absolute;
+  border: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px; }
+
+.socialgraces li.sg-facebook a {
+  background: url("https://admissions.vassar.edu/assets/images/facebook_16.png") no-repeat center; }
+
+.socialgraces li.sg-twitter a {
+  background: url("https://admissions.vassar.edu/assets/images/twitter_16.png") no-repeat center; }
+
+.socialgraces li.sg-youtube a {
+  background: url("https://admissions.vassar.edu/assets/images/youtube_16.png") no-repeat center; }
+
+.socialgraces li.sg-instagram a {
+  background: url("https://admissions.vassar.edu/assets/images/instagram_16.png") no-repeat center; }
+
+.socialgraces .sg-blog {
+  margin-left: 16px;
+  margin-left: 1em; }
+
+.socialgraces .sg-blog a {
+  font-size: 1em;
+  font-weight: bold; }
+
+/* width-1000 ----------------------------- */
+@media all and (min-width: 900px) {
+  .socialgraces {
+    display: inline-block;
+    margin: 0 auto;
+    width: 288px;
+    width: 18rem; }
+
+  .socialgraces .sg-blog {
+    margin: 4.8px 0 0 16px;
+    margin: 0.3rem 0 0 1rem; } }
+/* MODULES */
+/* FOOTER */
+.hp-footer {
+  background: #fff;
+  padding: 2em 2em 10em 2em;
+  text-align: center;
+  font-family: "proxima-nova";
+  font-size: 16px;
+  font-size: 1rem;
+  /*	font-size: 1rem;
+  */ }
+
+.hp-footer b.vcard-label {
+  font-family: "proxima-nova-condensed";
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 1px; }
+
+.hp-footer b.vcard-label:after {
+  content: ":"; }
+
+.hp-footer {
+  color: #333; }
+
+.hp-footer a {
+  border: none; }
+
+.hp-footer b.vcard-org a {
+  font-weight: 700; }
+
+.vcard-info li,
+.vcard-sites li {
+  display: inline; }
+
+.vcard-org {
+  font-family: "adelle";
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-bottom: 3px double #cccccc;
+  padding-bottom: 9.6px;
+  padding-bottom: 0.6rem;
+  margin-bottom: 9.6px;
+  margin-bottom: 0.6rem; }
+
+.vcard-info,
+.vcard-adr,
+.vcard-site,
+.vcard-org {
+  margin-bottom: 9.6px;
+  margin-bottom: 0.6rem; }
+
+.vcard .vcard-tel {
+  margin: 0; }
+
+/*	==========
+	NEW DESIGN
+	========== */
+.hp-footer a {
+  color: #882344 !important;
+  text-decoration: underline;
+  text-decoration-color: #ccc; }
+
+.hp-footer a:hover,
+.hp-footer a:visited:hover {
+  color: #f00 !important;
+  text-decoration-color: #f00; }
+
+.hp-footer {
+  margin-top: 3em; }
+
+/*	Important links */
+.important_links ul {
+  margin: 1em 0;
+  background: #eee;
+  padding: 0.2em 0.8em;
+  width: auto;
+  display: inline-block; }
+  @media screen and (min-width: 600px) {
+    .important_links ul li {
+      display: inline; } }
+  .important_links ul li:after {
+    content: "·";
+    margin-left: 0.7em;
+    margin-right: 0.7em; }
+  .important_links ul li:last-child:after {
+    display: none; }
+  .important_links ul li a {
+    font-size: 0.9em; }
+    .important_links ul li a:link, .important_links ul li a:visited {
+      color: #666; }
+    .important_links ul li a:hover, .important_links ul li a:visited:hover, .important_links ul li a:active {
+      color: #000; }
+
+/*	Fixed position bar */
+.fixed_links {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  padding: 2em 1.4em;
+  z-index: 9999; }
+
+.fixed_links ul {
+  margin: 0;
+  padding: 0; }
+
+.fixed_links li {
+  display: inline;
+  padding: 0;
+  margin: 0; }
+
+.fixed_links li a {
+  padding: 1em;
+  border-radius: 0.3em;
+  text-decoration: none; }
+  .fixed_links li a:link, .fixed_links li a:visited {
+    background: #882344;
+    color: #fff !important; }
+  .fixed_links li a:hover, .fixed_links li a:visited:hover {
+    background: #000;
+    color: #fff !important; }
+
+.hp-requestInfo {
+  display: block;
+  margin-top: 1em; }
+
+.hp-requestInfo a {
+  display: block;
+  padding: 4%;
+  background: #CC3D04;
+  position: relative;
+  background: #9E2D00;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  font-size: 1em;
+  color: #fcc900; }
+
+.hp-requestInfo a strong {
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: 1px; }
+
+.hp-requestInfo a:hover {
+  background: #CC3D04; }
+
+.hp-requestInfo a:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  bottom: 3px;
+  left: 2px;
+  border: 1px solid #d57800;
+  border-right: none;
+  border-left: none; }
+
+@media all and (min-width: 900px) {
+  .hp-requestInfo a {
+    background: #9E2D00;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    height: 40px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    font-size: .8em;
+    color: #fcc900; }
+
+  .hp-requestInfo a strong {
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: 1px; }
+
+  .hp-requestInfo a:hover {
+    background: #CC3D04; }
+
+  .hp-requestInfo a:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    bottom: 3px;
+    left: 2px;
+    border: 1px solid #d57800;
+    border-right: none;
+    border-left: none; } }
+/*	==========
+	NEW DESIGN
+	========== */
+.module--requestInfo a {
+  color: #882344 !important;
+  text-decoration: underline;
+  text-decoration-color: #ccc; }
+
+.module--requestInfo a:hover,
+.module--requestInfo a:visited:hover {
+  color: #f00 !important;
+  text-decoration-color: #f00; }
+
+.mainRow__module.module--requestInfo {
+  margin: 1em; }
+
+/*	PHONESTOPPERS
+	================================ */
+.ps-youre-wondering,
+.ps-visit {
+  padding: 4%; }
+
+.phonestoppers li a {
+  padding: 0.6em;
+  display: block; }
+
+.phonestoppers-container .more-link {
+  color: #fff; }
+
+.phonestoppers-container a:hover {
+  color: #000; }
+
+/*
+.ps-youre-wondering {
+  background: #FFEFE8;
+}
+
+.ps-youre-wondering h2 {
+  border-bottom: 1px solid #edcbbe;
+}
+
+.ps-youre-wondering h2 a {
+  color: #D4A390;
+}
+
+.ps-youre-wondering li a {
+  border-bottom: 1px dashed #edcbbe;
+  color: #963611;
+}
+
+.ps-youre-wondering li a:hover {
+  background: #EDCBBE;
+}
+
+.ps-youre-wondering .more-link {
+  color: #D4A390;
+}
+
+.ps-visit {
+  border-top: 4px solid white;
+  background: #EBF7CB;
+}
+
+.ps-visit h2 {
+  border-bottom: 1px solid #cfdea6;
+}
+
+.ps-visit h2 a {
+  color: #ADBF7A;
+}
+
+.ps-visit li a {
+  border-bottom: 1px dashed #cfdea6;
+  color: #72853E;
+}
+
+.ps-visit .more-link {
+  color: #ADBF7A;
+}
+*/
+@media all and (min-width: 640px) {
+  /* PHONESTOPPERS */
+  .phonestoppers-container {
+    overflow: hidden;
+    position: relative;
+    margin: 2em 0;
+    border-top: 1px solid #dddddd;
+    padding: 0.4em 0; }
+
+  .phonestoppers li {
+    font-size: 1.4em;
+    margin-top: -1px; }
+
+  .ps-visit {
+    border-bottom: 1px solid #dddddd; }
+
+  .phonestoppers-container h2 {
+    font-family: "proxima-nova-condensed";
+    font-size: 1em;
+    text-transform: uppercase;
+    width: 6em;
+    display: inline-block;
+    float: left;
+    color: #888; }
+
+  .phonestoppers {
+    display: table;
+    position: absolute;
+    left: 7em;
+    top: 1em; }
+
+  .phonestoppers ul {
+    display: table-row; }
+
+  .phonestoppers ul li {
+    display: table-cell;
+    font-family: "proxima-nova";
+    font-size: 1em;
+    padding-right: 0.5em;
+    white-space: nowrap; }
+
+  .phonestoppers ul li:after {
+    content: "\00B7";
+    margin-left: 0.5em; }
+
+  .ps-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/hp/phonestoppers-more-bg.png") top left repeat-y;
+    background: #fff;
+    color: #000;
+    height: 100%;
+    padding: 1em 1em 1em 4em; }
+    .ps-more:before {
+      content: "";
+      position: absolute;
+      width: 2em;
+      height: 100%;
+      left: -2em;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+70 */
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+      /* IE6-9 */ }
+
+  /*
+    .ps-youre-wondering a, .ps-youre-wondering h2 {
+      color: #ec6100;
+    }
+  
+    .ps-visit a, .ps-visit h2 {
+      color: #639309;
+    }
+  */ }
+@media all and (min-width: 640px) {
+  .phonestoppers li a {
+    padding: 0;
+    display: inline;
+    border: none; }
+
+  .phonestoppers li a:hover {
+    background: none; }
+
+  .phonestoppers-container {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 1%; }
+
+  .ps-visit {
+    border-top: none; }
+
+  .phonestoppers-container h2 {
+    padding: 0;
+    border: none; }
+
+  .ps-visit h2 i {
+    display: block; }
+
+  .phonestoppers-container a.more-link {
+    margin: 0;
+    /*    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    font-size: 16px;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/hp/phonestoppers-more-bg.png") top left repeat-y;
+    height: 100%;
+    padding: 16px 16px 16px 64px;
+    padding: 1em 1em 1em 4em;
+    /*    padding: 1em 1em 1em 4em;
+    */ }
+
+  /*
+    .ps-youre-wondering a.more-link,
+    .ps-youre-wondering li a {
+      color: #ec6100;
+    }
+  
+    .ps-visit a.more-link,
+    .ps-visit li a {
+      color: #639309;
+    }
+  */
+  a.ps-more:hover {
+    color: #000; }
+
+  .ps-visit {
+    border: none;
+    margin-bottom: .5em; } }
+/*	========
+	NEW DESIGN
+	======== */
+.phonestoppers-container a {
+  color: #882344 !important;
+  text-decoration: underline;
+  text-decoration-color: #ccc; }
+
+.phonestoppers-container a:hover,
+.phonestoppers-container a:visited:hover {
+  color: #f00 !important;
+  text-decoration-color: #f00; }
+
+/* Nav */
+/* width-640 -------------------------------------- */
+/* NAVIGATION */
+@media all and (min-width: 640px) {
+  .more-link {
+    margin: 0; } }
+.ac-navanchor.ac-navanchor-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3em;
+  height: 3em;
+  line-height: 0;
+  text-align: center;
+  text-indent: -999px;
+  overflow: hidden; }
+
+.ac-navanchor-menu:before {
+  /*  font-family: "icomoon";
+    content: "\e000"; */
+  content: "\2630";
+  font-size: 1.4em;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #aaa;
+  text-indent: 0;
+  text-shadow: none; }
+
+/*	MENUS
+	================================ */
+.u-navsite ul li a {
+  color: #eb4200;
+  font-weight: 500;
+  font-size: 1.4em;
+  border-bottom: 1px dashed #dddddd; }
+
+.u-navsite-level-1 > li > a:hover {
+  color: #fff; }
+
+.u-navsite-level-1 a {
+  display: block; }
+
+.u-navsite-level-1 a:hover {
+  background: #000;
+  color: white; }
+
+.u-navsite-level-1 > li > a {
+  padding: 1em 2em;
+  text-align: center; }
+
+.u-navsite-level-2,
+.u-navsite-level-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  opacity: 0;
+  width: 1px;
+  height: 1px; }
+
+.ac-navanchor.ac-navanchor-top {
+  display: block;
+  background: #eee;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center; }
+
+.ac-navanchor.ac-navanchor-top:hover {
+  background: #ddd; }
+
+@media all and (min-width: 600px) {
+  .u-navsite ul li a {
+    border-bottom: none;
+    font-size: 1em; }
+
+  .ac-navanchor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0; }
+
+  .u-navsite-level-2 > li > a {
+    position: static;
+    width: auto;
+    height: auto;
+    opacity: 1; }
+
+  .u-navsite {
+    position: absolute;
+    top: 6.5em;
+    text-align: center;
+    border-bottom: 1px dashed #dddddd;
+    width: 100%; }
+
+  .u-navsite-level-1 > li {
+    width: 33%;
+    float: left;
+    position: relative;
+    display: inline; }
+
+  .u-navsite-level-1 > li:hover ul {
+    display: block;
+    position: static; }
+
+  .u-navsite-level-1 > li > a {
+    padding: .7em;
+    text-align: left;
+    border-top: 1px dashed #dddddd;
+    border-right: 1px dashed #dddddd; }
+
+  .u-navsite-level-1 > li:hover > a {
+    border-color: #eb4200;
+    background: #eb4200;
+    color: #fff;
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+  .u-navsite-level-1 > li > a {
+    display: block; }
+
+  .u-navsite-level-2 {
+    display: none;
+    text-align: left;
+    z-index: 999;
+    font-size: 1em;
+    background: #fff;
+    -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #cccccc;
+    border-top: 4px solid #eb4200;
+    border-bottom: 1px solid #eb4200; }
+
+  .u-navsite-level-2 > li > a {
+    display: block;
+    padding: .5em; }
+
+  .u-navsite-level-1 > li:hover .u-navsite-level-2 {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 20em;
+    height: auto;
+    opacity: 1; }
+
+  .u-navsite-level-1 > li:hover ul {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    opacity: 1; }
+
+  .u-navsite-level-2 li {
+    display: block;
+    font-size: .9em; }
+
+  .u-navsite-level-3 {
+    padding-bottom: 16px;
+    padding-bottom: 1em; }
+
+  .u-navsite-level-3 a {
+    padding: 0.2em;
+    padding-left: 1.4em; } }
+@media all and (min-width: 600px) and (max-width: 900px) {
+  .u-navsite {
+    width: 90%;
+    left: 5%; }
+
+  .u-navsite-level-1 > li:hover:nth-child(3n+3) .u-navsite-level-2 {
+    left: auto;
+    right: 0; }
+
+  .u-navsite-level-1 > li:nth-child(3n+3) a {
+    left: auto;
+    right: 0;
+    border-right: none; } }
+@media all and (min-width: 900px) {
+  .u-navsite {
+    border-top: 1px dashed #dddddd;
+    border-bottom: none; }
+
+  .u-navsite ul li a {
+    font-size: 1em; }
+
+  .u-navsite-level-1 {
+    display: inline-block;
+    text-align: center;
+    width: auto; }
+
+  .u-navsite-level-1 > li {
+    width: auto;
+    float: left;
+    margin: 0; }
+
+  .u-navsite-level-1 > li > a {
+    text-transform: lowercase;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2em;
+    white-space: nowrap;
+    border: none; }
+
+  .u-navsite-level-1 > li:last-child:after {
+    content: ""; }
+
+  .u-navsite-level-2 > li > a {
+    display: block;
+    padding: 0.6em; }
+
+  .u-navsite .u-navsite-level-2 > li > a:hover {
+    display: block;
+    background: #000;
+    border-color: #000;
+    color: #fff; }
+
+  .u-navsite-level-1 li:hover .u-navsite-level-2 {
+    top: 2.4em; } }
+@media all and (min-width: 1150px) {
+  .u-navsite ul li a {
+    font-size: 1.2em;
+    font-weight: 100; } }
+/*	======
+	New design
+	====== */
+.ac-navanchor.ac-navanchor-menu {
+  top: -4em; }
+
+.u-navsite ul li a {
+  color: #861f41; }
+
+.u-navsite .u-navsite-level-2 > li > a:hover {
+  background: #F0EEEB;
+  border-color: #F0EEEB;
+  color: #746661; }
+
+.u-navsite-level-1 a:hover {
+  background: #F0EEEB;
+  color: #746661; }
+
+.u-navsite-level-1 > li:hover > a {
+  border-color: #861f41;
+  background: #861f41;
+  color: #fff; }
+
+@media (min-width: 900px) {
+  .nav.u-navsite {
+    background: #F0EEEB; } }
+@media (min-width: 1150px) {
+  .nav.u-navsite {
+    border: 0.9em solid #fff; } }
+
+@media (min-width: 900px) {
+  .u-navsite-level-1 > .u-navsite-id-contact:hover .u-navsite-level-2 {
+    left: auto;
+    right: 0;
+    width: 14em; }
+
+  .u-navsite-level-1 li:hover .u-navsite-level-2 {
+    top: 2.3em; } }
+@media (max-width: 900px) and (min-width: 600px) {
+  .u-navsite {
+    width: 100%;
+    left: 0; } }
+@media (min-width: 600px) {
+  .u-navsite {
+    top: 4em !important; } }
+@media (min-width: 900px) {
+  .u-navsite {
+    border: none !important;
+    top: 6.6em !important; } }
+
+.social-grid img {
+  transition: all ease 0.4s;
+  width: 100%; }
+@media (min-width: 600px) {
+  .social-grid {
+    margin: 2em auto;
+    width: 80%;
+    display: flex; }
+    .social-grid .grid-item {
+      padding: 1em;
+      width: 33%; }
+      .social-grid .grid-item:hover img {
+        transform: scale(1.1); } }
+
+/* Localized */
+/*	HEADER
+	================================ */
+.l-header {
+  margin-top: 2.3rem;
+  text-align: center;
+  padding: 0; }
+
+.l-header img {
+  max-width: 100%;
+  margin-top: 0.9rem; }
+
+.u-masthead {
+  display: block;
+  width: auto;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  font-family: "adelle", serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  /*	height: 80px;
+  height: 5rem;
+  /*	height: 5rem;
+  */
+  color: #902c00;
+  padding: 0 6%; }
+
+.u-masthead strong {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  text-transform: lowercase;
+  font-size: 57.6px;
+  font-size: 3.6rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  padding-top: 9.6px;
+  padding-top: 0.6rem;
+  color: #000;
+  display: block;
+  border-top: 3px double #eeeeee;
+  letter-spacing: 2px; }
+
+.u-masthead .hp-vassar {
+  width: 50%; }
+
+@media all and (min-width: 600px) {
+  .u-masthead {
+    font-size: 64px;
+    font-size: 4rem;
+    /*    font-size: 4rem;
+      */
+    letter-spacing: 4px; }
+
+  .u-masthead strong {
+    display: inline;
+    font-size: 96px;
+    font-size: 6rem; }
+
+  .u-masthead {
+    max-width: 800px; }
+
+  .u-masthead img {
+    /* max-width: 100%; */ }
+
+  .u-masthead .hp-vassar {
+    width: 30%; }
+
+  .u-masthead .hp-admissions {
+    width: 55%; } }
+@media all and (min-width: 600px) and (max-width: 900px) {
+  .u-masthead {
+    height: 1.4em; } }
+@media all and (min-width: 1150px) {
+  .u-masthead {
+    height: 99.2px;
+    height: 6.2rem;
+    /*		height: 6.2rem;
+      */ } }
+/*	======
+	New design
+	====== */
+/*	This provides space under the masthead to accommodate
+	the absolutely positioned nav */
+@media (min-width: 600px) and (max-width: 900px) {
+  .l-header {
+    margin-bottom: 9em !important; } }
+@media (min-width: 900px) {
+  .l-header {
+    margin-bottom: 3.6em !important; } }
+@media (min-width: 1150px) {
+  .l-header {
+    margin-bottom: 4em !important; } }
+
+.u-masthead {
+  font-family: proxima-nova;
+  text-transform: lowercase;
+  letter-spacing: 0;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.4;
+  font-size: 3em; }
+  @media (min-width: 900px) {
+    .u-masthead {
+      font-size: 4em; } }
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .u-masthead {
+    margin-top: 0; } }
+.u-masthead {
+  height: initial;
+  max-width: none !important;
+  padding: 0 !important; }
+
+/*	SEARCH OVERRIDE
+	================================ */
+/* Vassar College Search Stylesheet
+ * v1.0
+ * Last Updated: 2012-06-12 
+ *
+ * Styles for Search.
+ * Only included it search module is turned on.
+ *
+ */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+.m-search {
+  font: 0.75em Verdana, Helvetica, Arial, sans-serif; }
+
+.m-search-field {
+  font-size: 16px;
+  font-size: 1rem;
+  /*		font-size: 1rem;
+  	*/ }
+
+@media all and (min-width: 600px) {
+  .m-search-field {
+    font-size: 12.8px;
+    font-size: 0.8rem;
+    	/*	font-size: .8rem;
+    */ } }
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+@media screen {
+  .m-search-container input::-webkit-input-placeholder {
+    color: #aaa;
+    font-weight: 100; }
+
+  .m-search-container input:-moz-placeholder {
+    color: #aaa;
+    font-weight: 100; }
+
+  /* Search */
+  .m-search-submit {
+    background: none !important; }
+
+  .m-search-container {
+    display: block;
+    border: 1px solid #aaaaaa;
+    /*    position: absolute;
+        top: 12em;
+        left: 0; */
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 1.6em 6% 0 6%;
+    height: 2em; }
+
+  .m-search {
+    white-space: nowrap; }
+
+  .m-search input {
+    position: absolute;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: transparent;
+    font-size: 22.4px;
+    font-size: 1.4rem;
+    font-family: "proxima-nova"; }
+
+  .m-search-field {
+    padding: 0 0 0 0em;
+    margin: 0;
+    width: 78%;
+    height: 100%;
+    left: 0;
+    top: 0; }
+
+  .m-search-submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 22.4px;
+    padding: 0 1.4rem;
+    /*			padding: 0 1.4rem;
+    	*/
+    border: 1px solid red;
+    background: rgba(0, 0, 0, 0.1) !important; } }
+@media all and (min-width: 600px) {
+  .m-search input {
+    font-size: 0.8em; }
+
+  .m-search-container input::-webkit-input-placeholder {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+
+  .m-search-container input:-moz-placeholder {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+
+  .m-search-container {
+    position: absolute;
+    width: 192px;
+    width: 12rem;
+    right: 32px;
+    right: 2rem;
+    top: 32px;
+    top: 2rem;
+    /*		width: 12rem;
+    		right: 2rem;
+    		top: 2rem;
+    		*/
+    z-index: 999;
+    display: block;
+    background: #eee;
+    margin: 0;
+    height: 32px;
+    height: 2rem;
+    /*		height: 2rem;
+    	*/
+    border: none; }
+
+  .m-search {
+    height: inherit;
+    border: none; }
+
+  .m-search-submit {
+    padding: 0;
+    width: 32px;
+    width: 2rem;
+    /*		width: 2rem;	
+    	*/ }
+
+  .m-search-container {
+    background: #eb4200 !important;
+    top: 0 !important; }
+
+  .m-search-submit {
+    background: none !important; }
+
+  .m-search-container input:-moz-placeholder {
+    color: white !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+
+  .m-search-container input::-moz-placeholder,
+  .m-search-container input::-webkit-input-placeholder {
+    color: white !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); } }
+@media (min-width: 1150px) {
+  .m-search-container {
+    top: -4.4em !important; } }
+
+/*	======
+	New design
+	====== */
+.m-search-field {
+  padding-left: 0.4em; }
+  @media (min-width: 600px) {
+    .m-search-field {
+      color: #fff; } }
+
+@media (min-width: 600px) {
+  .m-search-container {
+    background: #861f41 !important;
+    border: 1px solid #fff;
+    top: -3.6em !important;
+    right: 1rem; }
+
+  .m-search input {
+    padding-left: 1em; }
+
+  .u-navsite-level-2 {
+    border-color: #861f41; }
+
+  input.m-search-submit {
+    color: #fff;
+    opacity: 0.4;
+    padding-right: 2em; }
+    input.m-search-submit:hover {
+      background: rgba(255, 255, 255, 0.2) !important;
+      color: #fff;
+      opacity: 1; } }
+@media screen {
+  .is-typekit {
+    visibility: hidden; }
+
+  	/* Web font loader
+        ======================================================================== */
+  .wf-error,
+  .wf-active,
+  .wf-inactive {
+    visibility: visible; } }
+.vassarbar {
+  background: #861f41;
+  padding: 0.6em; }
+  .vassarbar a {
+    font-family: "goudy-old-style", serif;
+    font-weight: 100;
+    font-size: 2em;
+    color: #fff; }
+
+.mainRow__content {
+  border: 2em solid #fff;
+  border-right: none;
+  border-left: none; }
+
+.mainRow__module {
+  padding: 1em; }
+
+.module--viewbook {
+  padding: 20%;
+  background: #eee; }
+
+.mainRow__content {
+  margin: 0 auto;
+  max-width: 50em;
+  flex-wrap: wrap; }
+  @media (min-width: 600px) {
+    .mainRow__content {
+      display: flex; } }
+  @media (min-width: 900px) {
+    .mainRow__content {
+      float: left; } }
+
+@media (min-width: 600px) {
+  .module--intro {
+    padding: 1em 3em;
+    width: 70%; } }
+
+/*
+.module--viewbook {
+	a {
+		display: block;
+		text-align: center;
+	}
+	
+	@media (min-width: $small) {
+		width: 40%;
+		padding: 0 2em;
+		background: none;
+	}
+	@media (min-width: $medium) {
+		width: 20%;
+		padding: 1em 2em;
+	}
+}
+.module--viewbook {
+	img {
+		width: 100%;
+	}
+}
+
+*/
+.viewbook {
+  text-align: center; }
+
+.viewbook img {
+  width: 100%;
+  padding: 0 4em; }
+  @media (min-width: 600px) {
+    .viewbook img {
+      padding: 0; } }
+
+@media (min-width: 600px) {
+  .module--announcements {
+    width: 30% !important; } }
+
+.module--announcements {
+  /*	background: #f8f7f6;
+  	border-radius: 0.2em;
+  	box-shadow: inset 0 1px 2px rgba(0,0,0,0.2); */
+  background: #efefef; }
+  @media (min-width: 900px) {
+    .module--announcements {
+      width: 34%;
+      align-self: flex-start; } }
+
+/*	New stuff */
+.announcements {
+  /*
+  .news-view-all {
+  	display: none;
+  }
+  */ }
+  .announcements .news-links {
+    background: none; }
+  .announcements h2 {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Proxima-Nova;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.06em; }
+  .announcements a {
+    color: #861f41 !important;
+    text-decoration: underline;
+    text-decoration-color: #ccc; }
+    .announcements a:hover {
+      color: #f00 !important;
+      text-decoration-color: #f00; }
+    .announcements a:active {
+      color: #000 !important;
+      text-decoration-color: #000; }
+  .announcements .news-annos {
+    margin-top: 0.4em; }
+    .announcements .news-annos li {
+      margin: 0.7em 0;
+      display: none;
+      /* I am told this is easier than modifying the ancient news code to only display three items max */ }
+      .announcements .news-annos li:nth-child(1), .announcements .news-annos li:nth-child(2), .announcements .news-annos li:nth-child(3) {
+        display: block; }
+    .announcements .news-annos a {
+      padding: 0.2em 0 !important;
+      font-size: 0.9em;
+      line-height: 1.1; }
+
+.reqinfo .button__desc {
+  line-height: 1.1;
+  margin: 0; }
+
+.highlights {
+  background: #F0EEEB;
+  padding: 2em; }
+  @media (min-width: 900px) {
+    .highlights {
+      display: flex;
+      flex-wrap: wrap; } }
+  .highlights h3 {
+    width: 100%;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em; }
+  .highlights .highlight {
+    padding: 0 0.5em; }
+    @media (min-width: 900px) {
+      .highlights .highlight {
+        width: 33.33%; } }
+    .highlights .highlight a {
+      transition: ease 0.5s all; }
+    .highlights .highlight a, .highlights .highlight a:visited {
+      color: #882344; }
+    .highlights .highlight a:hover, .highlights .highlight a:visited:hover {
+      color: #000;
+      opacity: 0.4; }
+    .highlights .highlight img {
+      border: 2px solid #fff;
+      width: 100%; }
+    .highlights .highlight .caption {
+      font-size: 0.9em; }
+
+/* @import "featuresArea-tiles"; */
+/*	Galleria
+	======== */
+.galleria-container.galleria--normal {
+  position: relative;
+  overflow: hidden; }
+  .galleria-container.galleria--normal .galleria {
+    margin: 0 auto; }
+    @media (min-width: 900px) {
+      .galleria-container.galleria--normal .galleria {
+        width: 60%;
+        background: #000; } }
+
+@media (min-width: 900px) {
+  .galleria-info-description a {
+    color: #fff; } }
+
+.galleria-info-text {
+  background: #fff;
+  padding: 0.6em 0 0 0.3em; }
+  @media (min-width: 900px) {
+    .galleria-info-text {
+      background: #000;
+      padding: 12px; } }
+
+.galleria-info-description {
+  font: normal 0.8em/1.4 proxima-nova, sans-serif; }
+
+.galleria-thumbnails-list {
+  text-align: center; }
+
+.galleria-thumbnails {
+  float: none;
+  display: inline-block; }
+
+.galleria-container {
+  overflow: visible; }
+
+.galleria-info {
+  width: auto;
+  top: 100%; }
+  @media all and (min-width: 900px) {
+    .galleria-info {
+      left: 15px;
+      top: auto;
+      bottom: 15px; } }
+
+.galleria-counter {
+  display: none !important; }
+
+/*	Variants
+	-------- */
+.smaller-gallery .galleria-container {
+  padding: 1em 0;
+  background: #000; }
+.smaller-gallery .galleria {
+  width: 80%;
+  margin: 0 auto; }
+
+/* This was for the Academics and Location stuff we removed 
+@import "hp-modules";
+*/
+/*	The following modules were from the previous, early design - the one with
+	the yellow tabs, the two boxes at the top of the page - and might
+	not be needed any more. */
+.buttonList {
+  margin: 0;
+  padding: 0; }
+  .buttonList .buttonList__item {
+    list-style: none;
+    margin-top: 0.8em; }
+    @media (min-width: 900px) {
+      .buttonList .buttonList__item {
+        display: flex; } }
+    .buttonList .buttonList__item:first-child {
+      margin-top: 0; }
+    .buttonList .buttonList__item .button__desc {
+      color: #666;
+      font-size: 0.9em;
+      font-weight: normal;
+      margin: 0.4em auto;
+      max-width: 22em; }
+      @media (min-width: 600px) {
+        .buttonList .buttonList__item .button__desc {
+          max-width: none; } }
+      @media (min-width: 900px) {
+        .buttonList .buttonList__item .button__desc {
+          width: 60%;
+          padding-left: 0.4em; } }
+    .buttonList .buttonList__item .button {
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      display: block;
+      max-width: 10em;
+      margin-left: auto;
+      margin-right: auto; }
+      @media (min-width: 900px) {
+        .buttonList .buttonList__item .button {
+          display: flex;
+          width: 40%;
+          margin-right: 0.4em; } }
+
+.admissions__tablist {
+  margin-bottom: 1em;
+  overflow: hidden;
+  height: 2.2em;
+  position: relative; }
+  .admissions__tablist:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    bottom: 0;
+    left: 0; }
+  .admissions__tablist li {
+    display: inline; }
+    .admissions__tablist li a {
+      font-weight: bold;
+      color: #aaa;
+      padding: 0.6em 0.6em 2em 0.6em;
+      display: inline-block; }
+    .admissions__tablist li[aria-selected="true"] {
+      position: relative; }
+      .admissions__tablist li[aria-selected="true"] a {
+        color: #000;
+        border: 1px solid #aaa;
+        border-bottom: none;
+        border-radius: 0.2em; }
+        .admissions__tablist li[aria-selected="true"] a:after {
+          content: "";
+          /* border: 2px solid #f00; */
+          width: calc(100% - 2px);
+          bottom: -0.6em;
+          height: 0.3em;
+          left: 1px;
+          position: absolute;
+          background: #fff;
+          right: 1px;
+          z-index: 3; }
+
+.row {
+  background: #F0EEEB;
+  margin-top: 3em;
+  padding: 1em; }
+  @media (min-width: 600px) {
+    .row {
+      margin-top: 8em; } }
+  @media (min-width: 900px) {
+    .row {
+      margin-top: 4.4em; } }
+  .row .modules__container {
+    margin: 0 auto;
+    max-width: 70em; }
+    @media (min-width: 600px) {
+      .row .modules__container {
+        display: flex; } }
+  .row .hp-module {
+    padding: 0; }
+    @media (min-width: 600px) {
+      .row .hp-module {
+        width: 50%; }
+        .row .hp-module:first-child {
+          margin-right: 0.6em; }
+        .row .hp-module:last-child {
+          margin-left: 0.6em; } }
+    .row .hp-module .module__content {
+      padding: 1.4em; }
+    .row .hp-module h2 {
+      margin: 0;
+      padding: 0.6em 0.6em 0.4em 0.6em;
+      background: #000;
+      border: none;
+      color: #eee;
+      letter-spacing: 2px;
+      font-size: 1em;
+      font-family: "proxima-nova-condensed";
+      text-transform: uppercase;
+      font-weight: bold; }
+  .row .module--apply {
+    background: #fff;
+    border: 0.4em solid #861f41; }
+    .row .module--apply h2 {
+      background: #861f41; }
+    .row .module--apply .button--apply, .row .module--apply .button--apply:visited {
+      background: #861f41;
+      color: #fff; }
+    .row .module--apply .button--apply:hover, .row .module--apply .button--apply:visited:hover {
+      background: #5d152d;
+      color: #fff; }
+    .row .module--apply .button--learnmore, .row .module--apply .button--learnmore:visited {
+      background: #0080f8;
+      color: #c8edff; }
+    .row .module--apply .button--learnmore:hover, .row .module--apply .button--learnmore:visited:hover {
+      background: #0066c5;
+      color: #c8edff; }
+    .row .module--apply .button--status, .row .module--apply .button--status:visited {
+      background: #ffca57;
+      color: #000; }
+    .row .module--apply .button--status:hover, .row .module--apply .button--status:visited:hover {
+      background: #ffba24;
+      color: #000; }
+  .row .module--info {
+    border: 0.4em solid #ffba24; }
+    .row .module--info h2 {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAS0lEQVQoU2P8/6DqP8Oruww4gZgyWIrx/6nw/4QU4VcINQlsyKu7OExEU4TdRCyKMBXiUISqEI8ihEICiiAKQeEIA3jCE6GQQKADABruMewXb/dgAAAAAElFTkSuQmCC) repeat;
+      color: #000 !important;
+      /* display: none; */ }
+
+@media (min-width: 1150px) {
+  .infoSections {
+    -webkit-column-count: 2;
+    column-count: 2; } }
+.infoSections .infoSection {
+  margin-bottom: 1em; }
+  @media (min-width: 1150px) {
+    .infoSections .infoSection {
+      display: inline-block; } }
+  .infoSections .infoSection h3 {
+    text-align: left;
+    margin: 0 0 0.2em 0;
+    font-size: 0.9em; }
+
+.moreInfo {
+  margin: 1em 0 0 0;
+  text-align: right;
+  width: 100%; }
+  .moreInfo a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.04em; }
+  .moreInfo a, .moreInfo a:visited {
+    color: #eb4200; }
+  .moreInfo a:hover, .moreInfo a:visited:hover {
+    color: #000; }
+
+/*	We're hiding this design */
+.row.newModules {
+  display: none; }
+
+.admissions__description.admissions__description--long {
+  display: flex; }
+
+.index-list li {
+  padding: 0.4em 0;
+  border-top: 1px solid #eee; }
+  .index-list li em {
+    float: right; }
+
+.section.section--large-image img {
+  width: 100%; }
+
+@media (min-width: 900px) {
+  .nav-on-side .u-navsite-level-1 li {
+    float: none;
+    display: block;
+    text-align: left; } }
+@media (min-width: 900px) {
+  .nav-on-side .u-navsite-level-1 {
+    left: 0;
+    position: absolute;
+    width: 20%;
+    padding: 1em 0;
+    z-index: 4; } }
+.nav-on-side .u-navsite-level-1 > li .u-navsite-level-2 {
+  display: none; }
+.nav-on-side .u-navsite-level-1 > li > a {
+  display: block;
+  box-shadow: none;
+  position: relative;
+  transition: all ease 0.2s;
+  padding: 0.6em 1em; }
+  .nav-on-side .u-navsite-level-1 > li > a:hover {
+    background: #861f41;
+    color: #fff; }
+  @media (min-width: 900px) {
+    .nav-on-side .u-navsite-level-1 > li > a {
+      padding: 0.6em 0 0.6em 2em; }
+      .nav-on-side .u-navsite-level-1 > li > a:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0;
+        background: #861f41;
+        transition: width ease 0.2s;
+        top: 0;
+        left: 0;
+        z-index: -1; }
+      .nav-on-side .u-navsite-level-1 > li > a:hover {
+        background: transparent !important; }
+        .nav-on-side .u-navsite-level-1 > li > a:hover:before {
+          width: 100%; } }
+@media (min-width: 600px) {
+  .nav-on-side .l-header {
+    margin-bottom: 10.2em !important; } }
+@media (min-width: 900px) {
+  .nav-on-side .l-header {
+    margin-bottom: 1em !important; } }
+@media (min-width: 900px) {
+  .nav-on-side .body-container > .galleria-container {
+    width: 80% !important;
+    float: right; } }
+@media (min-width: 900px) {
+  .nav-on-side .galleria-info-text {
+    background: #454545; } }
+@media (min-width: 900px) {
+  .nav-on-side .mainRow {
+    clear: both;
+    width: 80%;
+    float: right; } }
+.nav-on-side .info-chunks {
+  overflow: hidden;
+  clear: both; }
+
+.design-adjustments-0731 .l-header {
+  margin-bottom: 1em; }
+  @media screen and (min-width: 900px) {
+    .design-adjustments-0731 .l-header {
+      font-size: calc(1em + 0.5 * ((100vw - 20em) / 60));
+      padding-left: 1.5em;
+      position: absolute;
+      text-align: left;
+      width: 20%;
+      margin-bottom: 0; } }
+.design-adjustments-0731 .u-masthead {
+  text-transform: none !important;
+  font-size: 2em;
+  font-family: "proxima-nova-condensed"; }
+  .design-adjustments-0731 .u-masthead b {
+    font-weight: normal; }
+  @media screen and (min-width: 900px) {
+    .design-adjustments-0731 .u-masthead {
+      font-size: 1.4em; } }
+@media screen and (min-width: 900px) {
+  .design-adjustments-0731 .u-navsite-level-1 {
+    padding-right: 1em; } }
+.design-adjustments-0731 .u-navsite-level-1 a {
+  font-family: "adelle";
+  font-weight: normal; }
+  @media screen and (min-width: 900px) {
+    .design-adjustments-0731 .u-navsite-level-1 a {
+      border-bottom: 1px solid #ddd;
+      font-size: 1em; } }
+  @media screen and (min-width: 1150px) {
+    .design-adjustments-0731 .u-navsite-level-1 a {
+      font-size: 1.1em; } }
