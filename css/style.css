@@ -1057,9 +1057,13 @@ body {
   .l-header {
     margin-top: 0;
     margin-bottom: 5.3em; } }
-.homepage .fixed_links {
-  display: none; }
-
+/*
+.homepage {
+	.fixed_links {
+		display: none;
+	}
+}
+*/
 .button {
   text-decoration: none;
   color: #444;
